@@ -1,0 +1,31 @@
+@font-face {
+    font-family: SFHeavy;
+    src: url("../../fonts/SFUIText-Heavy.ttf");
+}
+@font-face {
+    font-family: SFBold;
+    src: url("../../fonts/SFUIText-Bold.ttf");
+}
+@font-face {
+    font-family: SFSemiBold;
+    src: url("../../fonts/SFUIText-Semibold.ttf");
+}
+@font-face {
+    font-family: SFMedium;
+    src: url("../../fonts/SFUIText-Medium.ttf");
+}
+@font-face {
+    font-family: SFRegular;
+    src: url("../../fonts/SFUIText-Regular.ttf");
+}
+
+body {
+    font-family: SFSemiBold;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    h1,h2,h3 {
+        color: black;
+    }
+}

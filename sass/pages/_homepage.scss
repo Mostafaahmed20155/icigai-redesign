@@ -1,0 +1,540 @@
+.main-section {
+  width: 100%;
+  min-height: 8rem;
+  // background-color: orangered; //REMOVE LATER
+  .hero-section {
+    margin-top: 12rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    display: flex;
+    position: relative; //CHECK OUT AT RESPONSIVE
+    background-image: url("../../img/robot.svg");
+    background-position: 80% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .primary-text {
+      .primary-header {
+        @include SFBold(10.5rem);
+        color: $color-secondary;
+        @include textShadow;
+        margin-bottom: 12rem;
+      }
+      .secondary-text {
+        display: flex;
+        .development-cont,
+        .design-cont {
+          position: relative;
+          .secondary-header {
+            @include SFBold(4.6rem);
+            margin-bottom: 3.8rem;
+            color: $color-text-2;
+          }
+          .hero-paragraph {
+            @include SFSemiBold(1.9rem);
+            margin-bottom: 5rem;
+            line-height: 36px;
+            color: $color-text-2;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 3rem;
+            height: 0.5rem;
+            background-color: $color-tertairy;
+          }
+        }
+        .development-cont {
+          margin-right: 14rem;
+        }
+      }
+    }
+    // .robot-img {
+    //     position: absolute; //CHECK OUT AT RESPONSIVE
+    //     top: -20%; //CHECK OUT AT RESPONSIVE
+    //     right: 13%; //CHECK OUT AT RESPONSIVE
+    //     width: 50%; //CHECK OUT AT RESPONSIVE
+    // }
+  }
+  .about-us {
+    margin-top: 8.5rem;
+    width: 100%;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    min-height: 15rem;
+    // background-color: orangered; //REMOVE LATER
+    display: flex;
+    flex-direction: column;
+    &__headers {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-title {
+        display: flex;
+        flex-direction: column;
+        .subtitle {
+          @include SFSemiBold(2.1rem);
+          text-transform: uppercase;
+          letter-spacing: 1rem;
+          margin-bottom: 0.8rem;
+        }
+        .about-us-title {
+          @include SFHeavy(10rem);
+          line-height: 12.7rem;
+          margin-bottom: 3rem;
+          color: $color-text;
+        }
+      }
+    }
+    .details-title {
+      @include SFSemiBold(1.6rem);
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+      margin-bottom: 1.1rem;
+    }
+    .introductory-title {
+      @include SFHeavy(3.9rem);
+      line-height: 4rem;
+      margin-bottom: 3rem;
+      color: $color-text;
+    }
+    .info-cont {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .icigai-info {
+        width: 48%;
+        @include SFRegular(2.5rem);
+        line-height: 4.5rem;
+        margin-bottom: 1.3rem;
+      }
+    }
+  }
+  .about-us-follow-up {
+    margin-top: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    .first-pic-cont {
+      margin-left: 40rem;
+      .first-pic {
+        width: 100%;
+      }
+    }
+    .video-cont {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .about-us-extra {
+        display: flex;
+        flex-direction: column;
+        //   padding-top: 6.5rem;
+        margin-left: auto;
+        margin-right: 17rem;
+        .tech-title {
+          @include SFSemiBold(5.3rem);
+          line-height: 7.5rem;
+          // margin-top: 6.5rem;
+          margin-bottom: 5rem;
+        }
+        .extra-info-text {
+          @include SFMedium(2rem);
+          line-height: 3.5rem;
+        }
+        .read-more-btn {
+          @include SFSemiBold(2.8rem);
+          color: #7f838a;
+          border-bottom: 2px solid #7f838a;
+          width: fit-content;
+          margin-top: 6rem;
+        }
+        .about-us-title-pic {
+          position: absolute;
+          left: 10%;
+          bottom: 35%;
+        }
+      }
+      .video {
+        width: 40%;
+        margin-top: -20rem;
+      }
+    }
+  }
+  .our-services {
+    width: 100%;
+    display: flex;
+    margin-top: 6rem;
+    min-height: 15rem;
+    // background-color: orangered; //REMOVE LATER
+    margin-top: 15rem;
+    // align-items: center;
+    .main-cont {
+      width: 33.33%;
+      display: flex;
+      flex-direction: column;
+      padding: 5rem;
+      padding-left: 18rem;
+      align-items: flex-start;
+      .services-num {
+        width: 100%;
+      }
+      .services-title {
+        @include SFSemiBold(9rem);
+        margin-bottom: 3rem
+      }
+      .services-para {
+        @include SFRegular(2rem);
+        line-height: 2.5rem;
+        // margin-left: auto;
+      }
+    }
+    .choices-cont {
+      width: 33.33%;
+      display: flex;
+      // flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 5rem;
+      justify-content: space-between;
+      .choice {
+        &:not(:last-of-type) {
+          margin-bottom: 5rem;
+        }
+        // &:nth-of-type(odd) {
+        //   margin-right: 7rem;
+        // }
+        &-number {
+          @include SFSemiBold(2rem);
+          color: #8C8C8E;
+          margin-bottom: 1.5rem;
+        }
+        &-name {
+          @include SFSemiBold(2.2rem);
+        }
+      }
+    }
+    .service-detail {
+      width: 33.34%;
+      background-color: $color-tertairy;
+      padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .choice-icon {
+        margin-top: 14rem;
+      }
+      .choice-title {
+        @include SFSemiBold(2.8rem);
+        line-height: 3.4rem;
+        margin-bottom: 5rem;
+        margin-top: 10rem;
+        color: $color-secondary;
+      }
+      .choice-text {
+        @include SFMedium(2rem);
+        line-height: 3rem;
+        margin-bottom: 9rem;
+        color: $color-secondary;
+      }
+      .prev-next-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .prev-cont {
+          .prev-title {
+            @include SFMedium(1.5rem);
+            line-height: 2rem;
+            margin-bottom: 3.1rem;
+            color: $color-secondary;
+          }
+        }
+        .next-cont {
+          .next-title {
+            @include SFMedium(1.5rem);
+            line-height: 2rem;
+            margin-bottom: 3.1rem;
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+  .our-industries {
+    padding-left: 18rem;
+    padding-right: 18rem;
+    margin-top: 7rem;
+    .main-cont {
+      display: flex;
+      justify-content: space-between;
+      .description-cont {
+        .industries-title {
+          @include SFSemiBold(9rem);
+          margin-bottom: 5rem;
+        }
+        .industries-text {
+          @include SFRegular(2rem);
+          line-height: 2.8rem;
+        }
+      }
+      .industries-number {
+        width: 25%;
+      }
+    }
+    .industries {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .single-industry {
+        // margin-right: 15rem;
+        width: 24%;
+        margin-bottom: 4.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .industry-icon {
+          width: 15%;
+        }
+        .industry-name {
+          @include SFRegular(2.4rem);
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+        .industry-description {
+          color: #A2A3A5;
+          text-align: center;
+          @include SFMedium(2rem);
+        }
+      }
+    }
+  }
+  .our-solutions {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    // margin-top: 6rem;
+    min-height: 15rem;
+    // background-color: orangered; //REMOVE LATER
+    margin-top: 8rem;
+    .main-cont {
+      width: 33.33%;
+      display: flex;
+      flex-direction: column;
+      padding: 5rem;
+      padding-right: 18rem;
+      align-items: flex-start;
+      .solutions-num {
+        width: 100%;
+      }
+      .solutions-title {
+        @include SFSemiBold(9rem);
+        margin-bottom: 3rem
+      }
+      .solutions-para {
+        @include SFRegular(2rem);
+        line-height: 2.5rem;
+        // margin-left: auto;
+      }
+    }
+    .choices-cont {
+      width: 33.33%;
+      display: flex;
+      align-items: center;
+      // flex-direction: column;
+      flex-wrap: wrap;
+      padding: 5rem;
+      justify-content: space-between;
+      .choice {
+        &:not(:last-of-type) {
+          margin-bottom: 5rem;
+        }
+        // &:nth-of-type(odd) {
+        //   margin-right: 7rem;
+        // }
+        &-number {
+          @include SFSemiBold(2rem);
+          color: #8C8C8E;
+          margin-bottom: 1.5rem;
+        }
+        &-name {
+          @include SFSemiBold(2.2rem);
+        }
+      }
+    }
+    .service-detail {
+      width: 33.34%;
+      background-color: $color-tertairy;
+      padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .choice-icon {
+        margin-top: 14rem;
+      }
+      .choice-title {
+        @include SFSemiBold(2.8rem);
+        line-height: 3.4rem;
+        margin-bottom: 5rem;
+        margin-top: 10rem;
+        color: $color-secondary;
+      }
+      .choice-text {
+        @include SFMedium(2rem);
+        line-height: 3rem;
+        margin-bottom: 9rem;
+        color: $color-secondary;
+      }
+      .prev-next-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .prev-cont {
+          .prev-title {
+            @include SFMedium(1.5rem);
+            line-height: 2rem;
+            margin-bottom: 3.1rem;
+            color: $color-secondary;
+          }
+        }
+        .next-cont {
+          .next-title {
+            @include SFMedium(1.5rem);
+            line-height: 2rem;
+            margin-bottom: 3.1rem;
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+  .our-people {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    .our-people-title {
+      @include SFSemiBold(9rem);
+      margin-top: 8rem;
+      margin-bottom: 4rem;
+    }
+    .our-team-members {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .single-member {
+        width: 24%;
+        // margin-right: 1rem;
+        margin-bottom: 1.5rem;
+        // background-color: orangered; //REMOVE LATER
+        position: relative;
+        .member-pic {
+          width: 100%;
+          height: 100%;
+          filter: grayscale(100%);
+          object-fit: cover;
+        }
+          .member-info {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            .member-name {
+              color: $color-secondary;
+              @include SFSemiBold(2.5rem);
+            }
+            .member-job-title {
+              color: $color-secondary;
+              @include SFRegular(1.5rem);
+            }
+          }
+        
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    min-height: 20rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    // background-color: $color-tertairy;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    padding-top: 17.5rem;
+    background-image: url("../../img/footer-pic.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .logo-box {
+      width: 33.33%;
+      display: flex;
+      // align-items: center;
+      // justify-content: center;
+      .logo-footer {
+        width: 100%;
+      }
+    }
+    .quick-access-links-cont {
+      width: 33.33%;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      // align-items: flex-start;
+      padding-left: 7rem;
+      .quick-access-link-title {
+        @include SFSemiBold(3rem);
+        margin-bottom: 3.5rem;
+        color: $color-secondary;
+      }
+      .links {
+        .quick-link {
+          &:not(:last-of-type) {
+            margin-bottom: 3rem;
+          }
+          @include SFRegular(2rem);
+          width: 49%;
+        }
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+    .contact-details-cont {
+      width: 33.34%;
+      .contact-details-title {
+        @include SFSemiBold(3rem);
+        margin-bottom: 3.5rem;
+        color: $color-secondary;
+      }
+      .contact-single-detail {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+        .single-details-title {
+          color: $color-secondary;
+          margin-left: 3rem;
+        }
+      }
+      .social-media-cont {
+        .social-media-title {
+          @include SFSemiBold(3rem);
+          margin-bottom: 3.5rem;
+          color: $color-secondary;
+        }
+        .social-media-icons {
+          display: flex;
+          a {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

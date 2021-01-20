@@ -1,0 +1,23 @@
+.icigai-header {
+    width: 100%;
+    position: sticky;
+    min-height: 5rem;
+    // background-color: orangered; //Just an indication
+    padding: 3rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-list {
+        display: flex;
+        &__item {
+            @include SFSemiBold(1.5rem);
+            text-transform: uppercase;
+            color: $headers-color;
+            &:not(:last-of-type) {
+                margin-right: 5rem;
+            }
+        }
+    }
+}

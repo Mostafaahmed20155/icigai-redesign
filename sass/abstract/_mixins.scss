@@ -1,0 +1,26 @@
+@mixin SFHeavy($font-size) {
+    font-family: SFHeavy;
+    font-size: $font-size;
+}
+@mixin SFBold($font-size) {
+    font-family: SFBold;
+    font-size: $font-size;
+}
+@mixin SFSemiBold($font-size) {
+    font-family: SFSemiBold;
+    font-size: $font-size;
+}
+@mixin SFMedium($font-size) {
+    font-family: SFMedium;
+    font-size: $font-size;
+}
+@mixin SFRegular($font-size) {
+    font-family: SFRegular;
+    font-size: $font-size;
+}
+@mixin boxShadow {
+    box-shadow: 0rem 0.3rem 2rem rgba($color: #000000, $alpha: 0.16);
+}
+@mixin textShadow {
+    text-shadow: 0rem 0.3rem 2rem rgba($color: #000000, $alpha: 0.16);
+}
