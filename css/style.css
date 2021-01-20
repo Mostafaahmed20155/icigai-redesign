@@ -64,10 +64,6 @@ body {
       .icigai-header .nav-list__item:not(:last-of-type) {
         margin-right: 5rem; }
 
-@media screen and (max-width: 1440px) {
-  html {
-    font-size: 50%; } }
-
 .main-section {
   width: 100%;
   min-height: 8rem; }
@@ -505,3 +501,154 @@ body {
         display: flex; }
         .main-section .footer .contact-details-cont .social-media-cont .social-media-icons a {
           margin-right: 2rem; }
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 50%; } }
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 40%; }
+  .icigai-header {
+    padding: 5rem; }
+  .icigai-header .nav-list {
+    display: none; }
+  .main-section .hero-section {
+    padding: 5rem; }
+  .main-section .hero-section .primary-text .secondary-text {
+    flex-direction: column; }
+  .main-section
+.hero-section
+.primary-text
+.secondary-text
+.development-cont
+.hero-paragraph,
+  .main-section
+.hero-section
+.primary-text
+.secondary-text
+.design-cont
+.hero-paragraph {
+    font-size: 2.9rem !important; }
+  .main-section .hero-section .primary-text .secondary-text .development-cont {
+    margin-right: unset;
+    margin-bottom: 5rem; }
+  .about-us-num-cont {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+  .about-us-num {
+    width: 100%; }
+  .main-section .about-us__headers {
+    align-items: flex-start !important;
+    flex-direction: column-reverse !important; }
+  .main-section .about-us {
+    margin-top: 4rem; }
+  .main-section .about-us .info-cont {
+    flex-direction: column;
+    flex-wrap: unset;
+    justify-content: space-between; }
+  .main-section .about-us .info-cont .icigai-info {
+    width: 100% !important;
+    margin-bottom: 3.3rem !important; }
+  .main-section .about-us-follow-up .first-pic-cont {
+    margin-left: unset; }
+  .main-section
+.about-us-follow-up
+.video-cont
+.about-us-extra
+.about-us-title-pic {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 6%; }
+  .main-section .about-us-follow-up .video-cont .about-us-extra {
+    margin-right: 3rem; }
+  .main-section .our-services {
+    flex-direction: column;
+    margin-top: 0; }
+  .main-section .our-services .main-cont .services-num {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+  .main-section .our-services .main-cont {
+    padding: 5rem;
+    width: 100%; }
+  .main-section .our-services .choices-cont {
+    width: 100%;
+    padding: 5rem;
+    justify-content: unset; }
+  .main-section .our-services .choices-cont .choices-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .main-section .our-services .choices-cont .choicecs-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+  .main-section .our-services .service-detail {
+    width: 100%;
+    align-items: center; }
+  .main-section .our-services .service-detail .choice-icon {
+    margin-top: 0rem; }
+  .main-section .our-services .service-detail .choice-title {
+    text-align: center; }
+  .main-section .our-services .service-detail .choice-text {
+    margin-bottom: 4rem; }
+  .main-section .about-us {
+    padding: 5rem; }
+  .main-section .our-industries {
+    padding: 5rem;
+    margin-top: 3rem; }
+  .main-section .our-industries .industries {
+    margin-top: 7rem; }
+  .main-section .our-industries .industries .single-industry {
+    width: 30%; }
+  .main-section .our-solutions {
+    flex-direction: column;
+    margin-top: 0; }
+  .main-section .our-solutions .main-cont {
+    width: 100%;
+    flex-direction: column;
+    padding: 5rem; }
+  .main-section .our-solutions .main-cont .solutions-num {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+  .main-section .our-solutions .choices-cont {
+    width: 100%;
+    padding: 5rem;
+    justify-content: unset; }
+  .main-section .our-solutions .choices-cont .choices-left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+  .main-section .our-solutions .choices-cont .choicecs-right {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+  .main-section .our-solutions .service-detail {
+    width: 100%;
+    padding: 5rem;
+    align-items: center; }
+  .main-section .our-solutions .service-detail .choice-title {
+    text-align: center; }
+  .main-section .our-solutions .service-detail .choice-text {
+    text-align: center; }
+  .main-section .our-solutions .service-detail .choice-icon {
+    margin-top: 0; }
+  .main-section .our-people .our-team-members .single-member {
+    width: 32%; }
+  .main-section .footer .logo-box {
+    display: none; }
+  .main-section .footer {
+    align-items: center; }
+  .main-section .footer .quick-access-links-cont {
+    width: 50%;
+    padding-left: 0; }
+  .main-section .footer .contact-details-cont {
+    width: 50%; } }
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 30%; } }
