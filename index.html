@@ -15,13 +15,27 @@
             <img src="img/icigai-logo.svg" alt="logo" class="icigai-logo">
         </div>
         <nav class="nav-list">
-            <a href="#" class="nav-list__item">About Us</a>
-            <a href="#" class="nav-list__item">Services</a>
-            <a href="#" class="nav-list__item">Industries</a>
-            <a href="#" class="nav-list__item">Solutions</a>
+            <a href="#about-us" class="nav-list__item">About Us</a>
+            <a href="#our-services" class="nav-list__item">Services</a>
+            <a href="#our-industries" class="nav-list__item">Industries</a>
+            <a href="#our-solutions" class="nav-list__item">Solutions</a>
             <a href="#" class="nav-list__item">Projects</a>
+            <a href="#our-team" class="nav-list__item">Our Team</a>
             <a href="#" class="nav-list__item">Contact</a>
         </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about-us">About Us</a>
+            <a href="#our-services">Services</a>
+            <a href="#our-industries">Industries</a>
+            <a href="#our-solutions">Solutions</a>
+            <a href="#">Projects</a>
+            <a href="#our-team">Our Team</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()" class="open-side-nav"><img src="img/side-bar-button.svg" alt="side-bar-btn" class="side-bar-btn"></span>
     </header>
     <main class="main-section">
         <div class="hero-section">
@@ -42,7 +56,7 @@
             </div>
             <!-- <img src="img/robot.svg" alt="robot" class="robot-img"> -->
         </div>
-        <div class="about-us">
+        <div class="about-us" id="about-us">
             <div class="about-us__headers">
                 <div class="about-us__headers-title">
                     <h3 class="subtitle">Representing as</h3>
@@ -75,11 +89,11 @@
             </div>
             <div class="video-cont">
                 <div class="about-us-extra">
-                    <h1 class="tech-title">A whole different kind <br> of tech firm.</h1>
+                    <h1 class="tech-title">A whole different kind of tech firm.</h1>
                     <p class="extra-info-text">
-                        ICIGAI is an industry-leading custom development <br> company having a diverse team of mobile app
-                        development <br> professionals. We have our own way of getting things done in <br> a fast and more
-                        efficient way that helps us deliever projects <br> in the shortest period of time
+                        ICIGAI is an industry-leading custom development company having a diverse team of mobile app
+                        development professionals. We have our own way of getting things done in a fast and more
+                        efficient way that helps us deliever projects in the shortest period of time
                     </p>
                     <a href="#" class="read-more-btn">Read more</a>
                     <img src="img/about-us-title-pic.svg" alt="about-us-title" class="about-us-title-pic">
@@ -87,11 +101,14 @@
                 <img src="img/video.png" alt="video" class="video">
             </div>
         </div>
-        <div class="our-services">
+        <div class="our-services" id="our-services">
             <div class="main-cont">
                 <img src="img/services-num.svg" alt="services-num" class="services-num">
                 <h1 class="services-title">Services</h1>
-                <p class="services-para">We offer the full spectrum of services to help organizations work better. Everything from creating standards of excellence to training your people to work in more effective ways, assessing how you’re doing, and helping you perform even better in future. Very few others do this, and none have been doing it as long as we have.
+                <p class="services-para">We offer the full spectrum of services to help organizations work better.
+                    Everything from creating standards of excellence to training your people to work in more effective
+                    ways, assessing how you’re doing, and helping you perform even better in future. Very few others do
+                    this, and none have been doing it as long as we have.
                 </p>
             </div>
             <div class="choices-cont">
@@ -116,6 +133,22 @@
                         <h3 class="choice-number">05</h3>
                         <h3 class="choice-name">Infrastructure <br> Services</h3>
                     </div>
+                    <div class="choice hidden">
+                        <h3 class="choice-number">06</h3>
+                        <h3 class="choice-name">Managed IT <br> Services</h3>
+                    </div>
+                    <div class="choice hidden">
+                        <h3 class="choice-number">07</h3>
+                        <h3 class="choice-name">IT <br> Outsourcing</h3>
+                    </div>
+                    <div class="choice hidden">
+                        <h3 class="choice-number">08</h3>
+                        <h3 class="choice-name">IT <br> Consulting</h3>
+                    </div>
+                    <div class="choice hidden">
+                        <h3 class="choice-number">09</h3>
+                        <h3 class="choice-name">IT <br> Support</h3>
+                    </div>
                 </div>
                 <div class="choicecs-right">
                     <div class="choice">
@@ -139,7 +172,9 @@
             <div class="service-detail">
                 <img src="img/software development.svg" alt="software-development" class="choice-icon">
                 <h1 class="choice-title">Software <br> Development</h1>
-                <p class="choice-text">We believe in channeling a systematic approach for our software development solutions irrespective of their complexity. We deploy advanced technology for software development projects</p>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects</p>
                 <div class="prev-next-cont">
                     <div class="prev-cont">
                         <h1 class="prev-title">IT <br> Support</h1>
@@ -152,12 +187,13 @@
                 </div>
             </div>
         </div>
-        <div class="our-industries">
+        <div class="our-industries" id="our-industries">
             <div class="main-cont">
                 <div class="description-cont">
                     <h1 class="industries-title">Our Industries</h1>
                     <p class="industries-text">
-                        Our highly customized teams bring each client a combination of deep industry <br> -knowledge and expert perspectives, to offer our clients fresh solutions <br> and innovative business insights.
+                        Our highly customized teams bring each client a combination of deep industry <br> -knowledge and
+                        expert perspectives, to offer our clients fresh solutions <br> and innovative business insights.
                     </p>
                 </div>
                 <img src="img/industries-num.svg" alt="industies-num" class="industries-number">
@@ -210,11 +246,12 @@
                 </div>
             </div>
         </div>
-        <div class="our-solutions">
+        <div class="our-solutions" id="our-solutions">
             <div class="main-cont">
                 <img src="img/solutions-num.svg" alt="solutions-num" class="solutions-num">
                 <h1 class="solutions-title">Solutions</h1>
-                <p class="solutions-para">ICIGAI delivers end-to-end digital transformation by refining the people, processes, and technology required to implement your chosen solution. 
+                <p class="solutions-para">ICIGAI delivers end-to-end digital transformation by refining the people,
+                    processes, and technology required to implement your chosen solution.
                 </p>
             </div>
             <div class="choices-cont">
@@ -239,6 +276,22 @@
                         <h3 class="choice-number">05</h3>
                         <h3 class="choice-name">Image <br> Analysis</h3>
                     </div>
+                    <div class="choice hidden">
+                        <h3 class="choice-number">06</h3>
+                        <h3 class="choice-name">Web <br> Portals</h3>
+                    </div>
+                    <div class="choice hidden">
+                        <h3 class="choice-number">07</h3>
+                        <h3 class="choice-name">E-Commerce <br> Solutions</h3>
+                    </div>
+                    <div class="choice hidden">
+                        <h3 class="choice-number">08</h3>
+                        <h3 class="choice-name">Fleet <br> Management</h3>
+                    </div>
+                    <div class="choice hidden">
+                        <h3 class="choice-number">09</h3>
+                        <h3 class="choice-name">ERP <br> Solutions</h3>
+                    </div>
                 </div>
                 <div class="choicecs-right">
                     <div class="choice">
@@ -262,7 +315,8 @@
             <div class="service-detail">
                 <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
                 <h1 class="choice-title">Data <br> Analytics</h1>
-                <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider as an extended team or as a part of your organization./p>
+                <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider
+                    as an extended team or as a part of your organization./p>
                 <div class="prev-next-cont">
                     <div class="prev-cont">
                         <h1 class="prev-title">ERP <br> Solutions</h1>
@@ -275,7 +329,7 @@
                 </div>
             </div>
         </div>
-        <div class="our-people">
+        <div class="our-people" id="our-team">
             <h1 class="our-people-title">Our People</h1>
             <div class="our-team-members">
                 <div class="single-member">
@@ -360,7 +414,7 @@
                 </div>
                 <div class="contact-single-detail">
                     <img src="img/schedule-icon.svg" alt="schedule-icon" class="single-detail-icon">
-                    <h1 class="single-details-title">Sunday - Thursday  9:00 - 18:30 <br>
+                    <h1 class="single-details-title">Sunday - Thursday 9:00 - 18:30 <br>
                         Saturday 11:00 - 17:00</h1>
                 </div>
                 <div class="social-media-cont">

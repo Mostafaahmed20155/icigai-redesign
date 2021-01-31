@@ -1,23 +1,107 @@
 .icigai-header {
-    width: 100%;
-    position: sticky;
-    min-height: 5rem;
-    // background-color: orangered; //Just an indication
-    padding: 3rem;
-    padding-left: 18rem;
-    padding-right: 18rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .nav-list {
-        display: flex;
-        &__item {
-            @include SFSemiBold(1.5rem);
-            text-transform: uppercase;
-            color: $headers-color;
-            &:not(:last-of-type) {
-                margin-right: 5rem;
-            }
-        }
+  width: 100%;
+  position: fixed;
+  min-height: 5rem;
+  // background-color: orangered; //Just an indication
+  padding: 4rem;
+  padding-left: 18rem;
+  padding-right: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99999;
+  transition: 0.3s;
+  top: 0;
+  .logo-box {
+    .icigai-logo {
+      width: 70%;
     }
+  }
+  .nav-list {
+    display: flex;
+    &__item {
+      @include SFSemiBold(1.5rem);
+      text-transform: uppercase;
+      color: $headers-color;
+      &:not(:last-of-type) {
+        margin-right: 5rem;
+      }
+    }
+  }
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+//   z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: $color-tertairy; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  z-index: 9999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: $color-primary;
+  display: block;
+  transition: 0.3s;
+  @include SFSemiBold(7rem);
+  margin-bottom: 7rem;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: $color-secondary;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.open-side-nav {
+    display: none;
+}
+.side-bar-btn {
+  transform: rotateY(180deg);
+  display: none;
+}
+
+.sticky {
+    background-color: $color-secondary;
+    padding: 3rem;
+    transition: 0.3s;
+    padding-left: 17rem;
+    padding-right: 17rem;
 }

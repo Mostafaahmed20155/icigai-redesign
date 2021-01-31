@@ -131,6 +131,7 @@
         flex-direction: column;
         //   padding-top: 6.5rem;
         margin-left: auto;
+        width: 33%;
         margin-right: 17rem;
         .tech-title {
           @include SFSemiBold(5.3rem);
@@ -537,4 +538,10 @@
       }
     }
   }
+}
+
+
+
+.hidden {
+  display: none;
 }

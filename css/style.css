@@ -46,14 +46,19 @@ body {
 
 .icigai-header {
   width: 100%;
-  position: sticky;
+  position: fixed;
   min-height: 5rem;
-  padding: 3rem;
+  padding: 4rem;
   padding-left: 18rem;
   padding-right: 18rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 99999;
+  transition: 0.3s;
+  top: 0; }
+  .icigai-header .logo-box .icigai-logo {
+    width: 70%; }
   .icigai-header .nav-list {
     display: flex; }
     .icigai-header .nav-list__item {
@@ -63,6 +68,81 @@ body {
       color: #747576; }
       .icigai-header .nav-list__item:not(:last-of-type) {
         margin-right: 5rem; }
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  top: 0;
+  /* Stay at the top */
+  right: 0;
+  background-color: #3A404A;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  z-index: 9999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #E9EAED;
+  display: block;
+  transition: 0.3s;
+  font-family: SFSemiBold;
+  font-size: 7rem;
+  margin-bottom: 7rem; }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #FFFFFF; }
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px; }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
+.open-side-nav {
+  display: none; }
+
+.side-bar-btn {
+  transform: rotateY(180deg);
+  display: none; }
+
+.sticky {
+  background-color: #FFFFFF;
+  padding: 3rem;
+  transition: 0.3s;
+  padding-left: 17rem;
+  padding-right: 17rem; }
 
 .main-section {
   width: 100%;
@@ -178,6 +258,7 @@ body {
         display: flex;
         flex-direction: column;
         margin-left: auto;
+        width: 33%;
         margin-right: 17rem; }
         .main-section .about-us-follow-up .video-cont .about-us-extra .tech-title {
           font-family: SFSemiBold;
@@ -502,6 +583,9 @@ body {
         .main-section .footer .contact-details-cont .social-media-cont .social-media-icons a {
           margin-right: 2rem; }
 
+.hidden {
+  display: none; }
+
 @media screen and (max-width: 1440px) {
   html {
     font-size: 50%; } }
@@ -509,8 +593,14 @@ body {
 @media screen and (max-width: 1024px) {
   html {
     font-size: 40%; }
+  .main-section .hero-section {
+    z-index: -1; }
   .icigai-header {
     padding: 5rem; }
+  .side-bar-btn {
+    display: block; }
+  .open-side-nav {
+    display: block; }
   .icigai-header .nav-list {
     display: none; }
   .main-section .hero-section {
@@ -563,7 +653,8 @@ body {
     bottom: 0;
     width: 6%; }
   .main-section .about-us-follow-up .video-cont .about-us-extra {
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    margin-left: 17rem; }
   .main-section .our-services {
     flex-direction: column;
     margin-top: 0; }
@@ -652,3 +743,100 @@ body {
 @media screen and (max-width: 1024px) {
   html {
     font-size: 30%; } }
+
+@media screen and (max-width: 768px) {
+  .main-section .our-services .choices-cont .choicecs-right {
+    display: none; }
+  .hidden {
+    display: block; }
+  .main-section .our-services .choices-cont .choices-left {
+    flex-wrap: wrap; }
+  .choice {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main-section .our-services .choices-cont .choice-name {
+    text-align: center; }
+  .main-section .our-solutions .choices-cont .choicecs-right {
+    display: none; }
+  .main-section .our-solutions .choices-cont .choices-left {
+    flex-wrap: wrap; }
+  .main-section .about-us-follow-up .video-cont .video {
+    display: none; }
+  .main-section .about-us-follow-up .video-cont .about-us-extra {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    padding-left: 17rem;
+    padding-right: 2rem; }
+  .main-section
+.about-us-follow-up
+.video-cont
+.about-us-extra
+.about-us-title-pic {
+    width: 4%; }
+  .main-section .about-us-follow-up .video-cont .about-us-extra .read-more-btn {
+    margin-top: 3rem; }
+  .main-section .our-industries .industries .single-industry .industry-name {
+    text-align: center; }
+  .main-section .our-solutions .choices-cont .choice-name {
+    text-align: center; } }
+
+@media screen and (max-width: 425px) {
+  .main-section .about-us-follow-up .video-cont .about-us-extra {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem; }
+  .main-section .our-people .our-team-members .single-member {
+    width: 49%; }
+  .main-section .our-people {
+    padding-left: 5rem;
+    padding-right: 5rem; }
+  .main-section .footer {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem;
+    padding-top: 5rem;
+    background-image: unset;
+    background-repeat: unset;
+    background-size: unset;
+    background-color: #232A35; }
+  .main-section .footer .quick-access-links-cont {
+    width: 100%; }
+  .main-section .footer .contact-details-cont {
+    width: 100%;
+    margin-top: 3rem; }
+  .main-section .footer .social-media-cont {
+    margin-top: 4rem; }
+  .single-detail-icon {
+    width: 6%; }
+  .main-section
+.footer
+.contact-details-cont
+.contact-single-detail
+.single-details-title {
+    line-height: 3.5rem; }
+  .main-section
+.footer
+.contact-details-cont
+.social-media-cont
+.social-media-icons
+a {
+    margin-right: 10rem; } }
+
+@media screen and (max-width: 375px) {
+  .main-section .our-industries .main-cont .description-cont .industries-text br {
+    display: none; }
+  .main-section .our-industries .industries .single-industry {
+    width: 50%; }
+  .choice {
+    width: 50%; }
+  .main-section .our-solutions .choices-cont .choice-name {
+    font-size: 3rem; }
+  .main-section .our-services .choices-cont .choice-name {
+    font-size: 3rem; } }

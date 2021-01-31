@@ -7,11 +7,20 @@
   html {
     font-size: 40%;
   }
+  .main-section .hero-section {
+    z-index: -1;
+  }
   .icigai-header {
     padding: 5rem;
   }
+  .side-bar-btn {
+    display: block;
+  }
+  .open-side-nav {
+    display: block;
+}
   .icigai-header .nav-list {
-      display: none;
+    display: none;
   }
   .main-section .hero-section {
     padding: 5rem;
@@ -76,6 +85,7 @@
   }
   .main-section .about-us-follow-up .video-cont .about-us-extra {
     margin-right: 3rem;
+    margin-left: 17rem;
   }
   .main-section .our-services {
     flex-direction: column;
@@ -179,20 +189,147 @@
   }
   .main-section .footer .logo-box {
     display: none;
-}
-.main-section .footer {
+  }
+  .main-section .footer {
     align-items: center;
-}
-.main-section .footer .quick-access-links-cont {
+  }
+  .main-section .footer .quick-access-links-cont {
     width: 50%;
     padding-left: 0;
-}
-.main-section .footer .contact-details-cont {
+  }
+  .main-section .footer .contact-details-cont {
     width: 50%;
-}
+  }
 }
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 30%;
+  html {
+    font-size: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-section .our-services .choices-cont .choicecs-right {
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
+  .main-section .our-services .choices-cont .choices-left {
+    flex-wrap: wrap;
+  }
+  .choice {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-section .our-services .choices-cont .choice-name {
+    text-align: center;
+  }
+  .main-section .our-solutions .choices-cont .choicecs-right {
+    display: none;
+  }
+  .main-section .our-solutions .choices-cont .choices-left {
+    flex-wrap: wrap;
+  }
+  .main-section .about-us-follow-up .video-cont .video {
+    display: none;
+  }
+  .main-section .about-us-follow-up .video-cont .about-us-extra {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    padding-left: 17rem;
+    padding-right: 2rem;
+  }
+  .main-section
+    .about-us-follow-up
+    .video-cont
+    .about-us-extra
+    .about-us-title-pic {
+    width: 4%;
+  }
+  .main-section .about-us-follow-up .video-cont .about-us-extra .read-more-btn {
+    margin-top: 3rem;
+  }
+  .main-section .our-industries .industries .single-industry .industry-name {
+    text-align: center;
+  }
+  .main-section .our-solutions .choices-cont .choice-name {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-section .about-us-follow-up .video-cont .about-us-extra {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .main-section .our-people .our-team-members .single-member {
+    width: 49%;
+  }
+  .main-section .our-people {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .main-section .footer {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem;
+    padding-top: 5rem;
+    background-image: unset;
+    background-repeat: unset;
+    background-size: unset;
+    background-color: $color-text-2;
+  }
+  .main-section .footer .quick-access-links-cont {
+    width: 100%;
+  }
+  .main-section .footer .contact-details-cont {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .main-section .footer .social-media-cont {
+    margin-top: 4rem;
+  }
+  .single-detail-icon {
+    width: 6%;
+  }
+  .main-section
+    .footer
+    .contact-details-cont
+    .contact-single-detail
+    .single-details-title {
+    line-height: 3.5rem;
+  }
+  .main-section
+    .footer
+    .contact-details-cont
+    .social-media-cont
+    .social-media-icons
+    a {
+    margin-right: 10rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main-section .our-industries .main-cont .description-cont .industries-text {
+    br {
+      display: none;
     }
+  }
+  .main-section .our-industries .industries .single-industry {
+    width: 50%;
+  }
+  .choice {
+    width: 50%;
+  }
+  .main-section .our-solutions .choices-cont .choice-name {
+    font-size: 3rem;
+  }
+  .main-section .our-services .choices-cont .choice-name {
+    font-size: 3rem;
+  }
 }
