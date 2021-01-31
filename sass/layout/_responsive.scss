@@ -238,8 +238,8 @@
     margin-right: 0;
     margin-left: 0;
     width: 100%;
-    padding-left: 17rem;
-    padding-right: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .main-section
     .about-us-follow-up
@@ -256,15 +256,6 @@
   }
   .main-section .our-solutions .choices-cont .choice-name {
     text-align: center;
-  }
-}
-@media screen and (max-width: 425px) {
-  .main-section .about-us-follow-up .video-cont .about-us-extra {
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
   .main-section .our-people .our-team-members .single-member {
     width: 49%;
@@ -314,6 +305,8 @@
     margin-right: 10rem;
   }
 }
+// @media screen and (max-width: 425px) {
+// }
 @media screen and (max-width: 375px) {
   .main-section .our-industries .main-cont .description-cont .industries-text {
     br {
