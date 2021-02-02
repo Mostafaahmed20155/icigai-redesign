@@ -1,153 +1,202 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth; }
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
 
 body {
-  box-sizing: border-box;
-  background-color: #E9EAED;
-  color: #3A404A;
-  background-image: url("../../img/hero-section-bg-pattern.svg");
-  background-repeat: no-repeat; }
+    box-sizing: border-box;
+    background-color: #E9EAED;
+    color: #3A404A;
+    background-image: url("../../img/hero-section-bg-pattern.svg");
+    background-repeat: no-repeat;
+}
 
 @font-face {
-  font-family: SFHeavy;
-  src: url("../../fonts/SFUIText-Heavy.ttf"); }
+    font-family: SFHeavy;
+    src: url("../../fonts/SFUIText-Heavy.ttf");
+}
 
 @font-face {
-  font-family: SFBold;
-  src: url("../../fonts/SFUIText-Bold.ttf"); }
+    font-family: SFBold;
+    src: url("../../fonts/SFUIText-Bold.ttf");
+}
 
 @font-face {
-  font-family: SFSemiBold;
-  src: url("../../fonts/SFUIText-Semibold.ttf"); }
+    font-family: SFSemiBold;
+    src: url("../../fonts/SFUIText-Semibold.ttf");
+}
 
 @font-face {
-  font-family: SFMedium;
-  src: url("../../fonts/SFUIText-Medium.ttf"); }
+    font-family: SFMedium;
+    src: url("../../fonts/SFUIText-Medium.ttf");
+}
 
 @font-face {
-  font-family: SFRegular;
-  src: url("../../fonts/SFUIText-Regular.ttf"); }
+    font-family: SFRegular;
+    src: url("../../fonts/SFUIText-Regular.ttf");
+}
 
 body {
-  font-family: SFSemiBold; }
-  body a {
+    font-family: SFSemiBold;
+}
+
+body a {
     color: white;
-    text-decoration: none; }
-  body h1, body h2, body h3 {
-    color: black; }
+    text-decoration: none;
+}
+
+body h1,
+body h2,
+body h3 {
+    color: black;
+}
 
 .icigai-header {
-  width: 100%;
-  position: fixed;
-  min-height: 5rem;
-  padding: 4rem;
-  padding-left: 18rem;
-  padding-right: 18rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 99999;
-  transition: 0.3s;
-  top: 0; }
-  .icigai-header .logo-box .icigai-logo {
-    width: 70%; }
-  .icigai-header .nav-list {
-    display: flex; }
-    .icigai-header .nav-list__item {
-      font-family: SFSemiBold;
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      color: #747576; }
-      .icigai-header .nav-list__item:not(:last-of-type) {
-        margin-right: 5rem; }
+    width: 100%;
+    position: fixed;
+    min-height: 5rem;
+    padding: 4rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99999;
+    transition: 0.3s;
+    top: 0;
+}
+
+.icigai-header .logo-box .icigai-logo {
+    width: 70%;
+}
+
+.icigai-header .nav-list {
+    display: flex;
+}
+
+.icigai-header .nav-list__item {
+    font-family: SFSemiBold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #747576;
+}
+
+.icigai-header .nav-list__item:not(:last-of-type) {
+    margin-right: 5rem;
+}
+
 
 /* The side navigation menu */
+
 .sidenav {
-  height: 100%;
-  /* 100% Full-height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  top: 0;
-  /* Stay at the top */
-  right: 0;
-  background-color: #3A404A;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */
-  z-index: 9999999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #3A404A;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    z-index: 9999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* The navigation menu links */
+
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #E9EAED;
-  display: block;
-  transition: 0.3s;
-  font-family: SFSemiBold;
-  font-size: 7rem;
-  margin-bottom: 7rem; }
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #E9EAED;
+    display: block;
+    transition: 0.3s;
+    font-family: SFSemiBold;
+    font-size: 7rem;
+    margin-bottom: 7rem;
+}
+
 
 /* When you mouse over the navigation links, change their color */
+
 .sidenav a:hover {
-  color: #FFFFFF; }
+    color: #FFFFFF;
+}
+
 
 /* Position and style the close button (top right corner) */
+
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px; }
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
 #main {
-  transition: margin-left 0.5s;
-  padding: 20px; }
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px; }
-  .sidenav a {
-    font-size: 18px; } }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
 
 .open-side-nav {
-  display: none; }
+    display: none;
+}
 
 .side-bar-btn {
-  transform: rotateY(180deg);
-  display: none; }
+    transform: rotateY(180deg);
+    display: none;
+}
 
 .sticky {
-  background-color: #FFFFFF;
-  padding: 3rem;
-  transition: 0.3s;
-  padding-left: 17rem;
-  padding-right: 17rem; }
+    background-color: #FFFFFF;
+    padding: 3rem;
+    transition: 0.3s;
+    padding-left: 17rem;
+    padding-right: 17rem;
+}
 
 .main-section {
-  width: 100%;
-  min-height: 8rem; }
-  .main-section .hero-section {
+    width: 100%;
+    min-height: 8rem;
+}
+
+.main-section .hero-section {
     margin-top: 12rem;
     padding-left: 18rem;
     padding-right: 18rem;
@@ -156,371 +205,525 @@ body {
     background-image: url("../../img/robot.svg");
     background-position: 80% 100%;
     background-repeat: no-repeat;
-    background-size: contain; }
-    .main-section .hero-section .primary-text .primary-header {
-      font-family: SFBold;
-      font-size: 10.5rem;
-      color: #FFFFFF;
-      text-shadow: 0rem 0.3rem 2rem rgba(0, 0, 0, 0.16);
-      margin-bottom: 12rem; }
-    .main-section .hero-section .primary-text .secondary-text {
-      display: flex; }
-      .main-section .hero-section .primary-text .secondary-text .development-cont,
-      .main-section .hero-section .primary-text .secondary-text .design-cont {
-        position: relative; }
-        .main-section .hero-section .primary-text .secondary-text .development-cont .secondary-header,
-        .main-section .hero-section .primary-text .secondary-text .design-cont .secondary-header {
-          font-family: SFBold;
-          font-size: 4.6rem;
-          margin-bottom: 3.8rem;
-          color: #232A35; }
-        .main-section .hero-section .primary-text .secondary-text .development-cont .hero-paragraph,
-        .main-section .hero-section .primary-text .secondary-text .design-cont .hero-paragraph {
-          font-family: SFSemiBold;
-          font-size: 1.9rem;
-          margin-bottom: 5rem;
-          line-height: 36px;
-          color: #232A35; }
-        .main-section .hero-section .primary-text .secondary-text .development-cont::after,
-        .main-section .hero-section .primary-text .secondary-text .design-cont::after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 3rem;
-          height: 0.5rem;
-          background-color: #3A404A; }
-      .main-section .hero-section .primary-text .secondary-text .development-cont {
-        margin-right: 14rem; }
-  .main-section .about-us {
+    background-size: contain;
+}
+
+.main-section .hero-section .primary-text .primary-header {
+    font-family: SFBold;
+    font-size: 10.5rem;
+    color: #FFFFFF;
+    text-shadow: 0rem 0.3rem 2rem rgba(0, 0, 0, 0.16);
+    margin-bottom: 12rem;
+}
+
+.main-section .hero-section .primary-text .secondary-text {
+    display: flex;
+}
+
+.main-section .hero-section .primary-text .secondary-text .development-cont,
+.main-section .hero-section .primary-text .secondary-text .design-cont {
+    position: relative;
+}
+
+.main-section .hero-section .primary-text .secondary-text .development-cont .secondary-header,
+.main-section .hero-section .primary-text .secondary-text .design-cont .secondary-header {
+    font-family: SFBold;
+    font-size: 4.6rem;
+    margin-bottom: 3.8rem;
+    color: #232A35;
+}
+
+.main-section .hero-section .primary-text .secondary-text .development-cont .hero-paragraph,
+.main-section .hero-section .primary-text .secondary-text .design-cont .hero-paragraph {
+    font-family: SFSemiBold;
+    font-size: 1.9rem;
+    margin-bottom: 5rem;
+    line-height: 36px;
+    color: #232A35;
+}
+
+.main-section .hero-section .primary-text .secondary-text .development-cont::after,
+.main-section .hero-section .primary-text .secondary-text .design-cont::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3rem;
+    height: 0.5rem;
+    background-color: #3A404A;
+}
+
+.main-section .hero-section .primary-text .secondary-text .development-cont {
+    margin-right: 14rem;
+}
+
+.main-section .about-us {
     margin-top: 8.5rem;
     width: 100%;
     padding-left: 18rem;
     padding-right: 18rem;
     min-height: 15rem;
     display: flex;
-    flex-direction: column; }
-    .main-section .about-us__headers {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      .main-section .about-us__headers-title {
-        display: flex;
-        flex-direction: column; }
-        .main-section .about-us__headers-title .subtitle {
-          font-family: SFSemiBold;
-          font-size: 2.1rem;
-          text-transform: uppercase;
-          letter-spacing: 1rem;
-          margin-bottom: 0.8rem; }
-        .main-section .about-us__headers-title .about-us-title {
-          font-family: SFHeavy;
-          font-size: 10rem;
-          line-height: 12.7rem;
-          margin-bottom: 3rem;
-          color: #3A404A; }
-    .main-section .about-us .details-title {
-      font-family: SFSemiBold;
-      font-size: 1.6rem;
-      text-transform: uppercase;
-      letter-spacing: 1rem;
-      margin-bottom: 1.1rem; }
-    .main-section .about-us .introductory-title {
-      font-family: SFHeavy;
-      font-size: 3.9rem;
-      line-height: 4rem;
-      margin-bottom: 3rem;
-      color: #3A404A; }
-    .main-section .about-us .info-cont {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-      .main-section .about-us .info-cont .icigai-info {
-        width: 48%;
-        font-family: SFRegular;
-        font-size: 2.5rem;
-        line-height: 4.5rem;
-        margin-bottom: 1.3rem; }
-  .main-section .about-us-follow-up {
+    flex-direction: column;
+}
+
+.main-section .about-us__headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-section .about-us__headers-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section .about-us__headers-title .subtitle {
+    font-family: SFSemiBold;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.main-section .about-us__headers-title .about-us-title {
+    font-family: SFHeavy;
+    font-size: 10rem;
+    line-height: 12.7rem;
+    margin-bottom: 3rem;
+    color: #3A404A;
+}
+
+.main-section .about-us .details-title {
+    font-family: SFSemiBold;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+.main-section .about-us .introductory-title {
+    font-family: SFHeavy;
+    font-size: 3.9rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+    color: #3A404A;
+}
+
+.main-section .about-us .info-cont {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-section .about-us .info-cont .icigai-info {
+    width: 48%;
+    font-family: SFRegular;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.main-section .about-us-follow-up {
     margin-top: 6.5rem;
     display: flex;
-    flex-direction: column; }
-    .main-section .about-us-follow-up .first-pic-cont {
-      margin-left: 40rem; }
-      .main-section .about-us-follow-up .first-pic-cont .first-pic {
-        width: 100%; }
-    .main-section .about-us-follow-up .video-cont {
-      display: flex;
-      justify-content: space-between;
-      position: relative; }
-      .main-section .about-us-follow-up .video-cont .about-us-extra {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        width: 33%;
-        margin-right: 17rem; }
-        .main-section .about-us-follow-up .video-cont .about-us-extra .tech-title {
-          font-family: SFSemiBold;
-          font-size: 5.3rem;
-          line-height: 7.5rem;
-          margin-bottom: 5rem; }
-        .main-section .about-us-follow-up .video-cont .about-us-extra .extra-info-text {
-          font-family: SFMedium;
-          font-size: 2rem;
-          line-height: 3.5rem; }
-        .main-section .about-us-follow-up .video-cont .about-us-extra .read-more-btn {
-          font-family: SFSemiBold;
-          font-size: 2.8rem;
-          color: #7f838a;
-          border-bottom: 2px solid #7f838a;
-          width: fit-content;
-          margin-top: 6rem; }
-        .main-section .about-us-follow-up .video-cont .about-us-extra .about-us-title-pic {
-          position: absolute;
-          left: 10%;
-          bottom: 35%; }
-      .main-section .about-us-follow-up .video-cont .video {
-        width: 40%;
-        margin-top: -20rem; }
-  .main-section .our-services {
+    flex-direction: column;
+}
+
+.main-section .about-us-follow-up .first-pic-cont {
+    margin-left: 40rem;
+}
+
+.main-section .about-us-follow-up .first-pic-cont .first-pic {
+    width: 100%;
+}
+
+.main-section .about-us-follow-up .video-cont {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main-section .about-us-follow-up .video-cont .about-us-extra {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 33%;
+    margin-right: 17rem;
+}
+
+.main-section .about-us-follow-up .video-cont .about-us-extra .tech-title {
+    font-family: SFSemiBold;
+    font-size: 5.3rem;
+    line-height: 7.5rem;
+    margin-bottom: 5rem;
+}
+
+.main-section .about-us-follow-up .video-cont .about-us-extra .extra-info-text {
+    font-family: SFMedium;
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+
+.main-section .about-us-follow-up .video-cont .about-us-extra .read-more-btn {
+    font-family: SFSemiBold;
+    font-size: 2.8rem;
+    color: #7f838a;
+    border-bottom: 2px solid #7f838a;
+    width: fit-content;
+    margin-top: 6rem;
+}
+
+.main-section .about-us-follow-up .video-cont .about-us-extra .about-us-title-pic {
+    position: absolute;
+    left: 10%;
+    bottom: 35%;
+}
+
+.main-section .about-us-follow-up .video-cont .video {
+    width: 40%;
+    margin-top: -20rem;
+}
+
+.main-section .our-services {
     width: 100%;
     display: flex;
     margin-top: 6rem;
     min-height: 15rem;
-    margin-top: 15rem; }
-    .main-section .our-services .main-cont {
-      width: 33.33%;
-      display: flex;
-      flex-direction: column;
-      padding: 5rem;
-      padding-left: 18rem;
-      align-items: flex-start; }
-      .main-section .our-services .main-cont .services-num {
-        width: 100%; }
-      .main-section .our-services .main-cont .services-title {
-        font-family: SFSemiBold;
-        font-size: 9rem;
-        margin-bottom: 3rem; }
-      .main-section .our-services .main-cont .services-para {
-        font-family: SFRegular;
-        font-size: 2rem;
-        line-height: 2.5rem; }
-    .main-section .our-services .choices-cont {
-      width: 33.33%;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      padding: 5rem;
-      justify-content: space-between; }
-      .main-section .our-services .choices-cont .choice:not(:last-of-type) {
-        margin-bottom: 5rem; }
-      .main-section .our-services .choices-cont .choice-number {
-        font-family: SFSemiBold;
-        font-size: 2rem;
-        color: #8C8C8E;
-        margin-bottom: 1.5rem; }
-      .main-section .our-services .choices-cont .choice-name {
-        font-family: SFSemiBold;
-        font-size: 2.2rem; }
-    .main-section .our-services .service-detail {
-      width: 33.34%;
-      background-color: #3A404A;
-      padding: 5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; }
-      .main-section .our-services .service-detail .choice-icon {
-        margin-top: 14rem; }
-      .main-section .our-services .service-detail .choice-title {
-        font-family: SFSemiBold;
-        font-size: 2.8rem;
-        line-height: 3.4rem;
-        margin-bottom: 5rem;
-        margin-top: 10rem;
-        color: #FFFFFF; }
-      .main-section .our-services .service-detail .choice-text {
-        font-family: SFMedium;
-        font-size: 2rem;
-        line-height: 3rem;
-        margin-bottom: 9rem;
-        color: #FFFFFF; }
-      .main-section .our-services .service-detail .prev-next-cont {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%; }
-        .main-section .our-services .service-detail .prev-next-cont .prev-cont .prev-title {
-          font-family: SFMedium;
-          font-size: 1.5rem;
-          line-height: 2rem;
-          margin-bottom: 3.1rem;
-          color: #FFFFFF; }
-        .main-section .our-services .service-detail .prev-next-cont .next-cont .next-title {
-          font-family: SFMedium;
-          font-size: 1.5rem;
-          line-height: 2rem;
-          margin-bottom: 3.1rem;
-          color: #FFFFFF; }
-  .main-section .our-industries {
+    margin-top: 15rem;
+}
+
+.main-section .our-services .main-cont {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    padding-left: 18rem;
+    align-items: flex-start;
+}
+
+.main-section .our-services .main-cont .services-num {
+    width: 100%;
+}
+
+.main-section .our-services .main-cont .services-title {
+    font-family: SFSemiBold;
+    font-size: 9rem;
+    margin-bottom: 3rem;
+}
+
+.main-section .our-services .main-cont .services-para {
+    font-family: SFRegular;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.main-section .our-services .choices-cont {
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5rem;
+    justify-content: space-between;
+}
+
+.main-section .our-services .choices-cont .choice:not(:last-of-type) {
+    margin-bottom: 5rem;
+}
+
+.main-section .our-services .choices-cont .choice-number {
+    font-family: SFSemiBold;
+    font-size: 2rem;
+    color: #8C8C8E;
+    margin-bottom: 1.5rem;
+}
+
+.main-section .our-services .choices-cont .choice-name {
+    font-family: SFSemiBold;
+    font-size: 2.2rem;
+}
+
+.main-section .our-services .service-detail {
+    width: 33.34%;
+    background-color: #3A404A;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-section .our-services .service-detail .choice-icon {
+    margin-top: 14rem;
+}
+
+.main-section .our-services .service-detail .choice-title {
+    font-family: SFSemiBold;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+    color: #FFFFFF;
+}
+
+.main-section .our-services .service-detail .choice-text {
+    font-family: SFMedium;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 9rem;
+    color: #FFFFFF;
+}
+
+.main-section .our-services .service-detail .prev-next-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main-section .our-services .service-detail .prev-next-cont .prev-cont .prev-title {
+    font-family: SFMedium;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 3.1rem;
+    color: #FFFFFF;
+}
+
+.main-section .our-services .service-detail .prev-next-cont .next-cont .next-title {
+    font-family: SFMedium;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 3.1rem;
+    color: #FFFFFF;
+}
+
+.main-section .our-industries {
     padding-left: 18rem;
     padding-right: 18rem;
-    margin-top: 7rem; }
-    .main-section .our-industries .main-cont {
-      display: flex;
-      justify-content: space-between; }
-      .main-section .our-industries .main-cont .description-cont .industries-title {
-        font-family: SFSemiBold;
-        font-size: 9rem;
-        margin-bottom: 5rem; }
-      .main-section .our-industries .main-cont .description-cont .industries-text {
-        font-family: SFRegular;
-        font-size: 2rem;
-        line-height: 2.8rem; }
-      .main-section .our-industries .main-cont .industries-number {
-        width: 25%; }
-    .main-section .our-industries .industries {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-      .main-section .our-industries .industries .single-industry {
-        width: 24%;
-        margin-bottom: 4.8rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .main-section .our-industries .industries .single-industry .industry-icon {
-          width: 15%; }
-        .main-section .our-industries .industries .single-industry .industry-name {
-          font-family: SFRegular;
-          font-size: 2.4rem;
-          margin-top: 1.5rem;
-          margin-bottom: 1.5rem; }
-        .main-section .our-industries .industries .single-industry .industry-description {
-          color: #A2A3A5;
-          text-align: center;
-          font-family: SFMedium;
-          font-size: 2rem; }
-  .main-section .our-solutions {
+    margin-top: 7rem;
+}
+
+.main-section .our-industries .main-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section .our-industries .main-cont .description-cont .industries-title {
+    font-family: SFSemiBold;
+    font-size: 9rem;
+    margin-bottom: 5rem;
+}
+
+.main-section .our-industries .main-cont .description-cont .industries-text {
+    font-family: SFRegular;
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+
+.main-section .our-industries .main-cont .industries-number {
+    width: 25%;
+}
+
+.main-section .our-industries .industries {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-section .our-industries .industries .single-industry {
+    width: 24%;
+    margin-bottom: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section .our-industries .industries .single-industry .industry-icon {
+    width: 15%;
+}
+
+.main-section .our-industries .industries .single-industry .industry-name {
+    font-family: SFRegular;
+    font-size: 2.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-section .our-industries .industries .single-industry .industry-description {
+    color: #A2A3A5;
+    text-align: center;
+    font-family: SFMedium;
+    font-size: 2rem;
+}
+
+.main-section .our-solutions {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     min-height: 15rem;
-    margin-top: 8rem; }
-    .main-section .our-solutions .main-cont {
-      width: 33.33%;
-      display: flex;
-      flex-direction: column;
-      padding: 5rem;
-      padding-right: 18rem;
-      align-items: flex-start; }
-      .main-section .our-solutions .main-cont .solutions-num {
-        width: 100%; }
-      .main-section .our-solutions .main-cont .solutions-title {
-        font-family: SFSemiBold;
-        font-size: 9rem;
-        margin-bottom: 3rem; }
-      .main-section .our-solutions .main-cont .solutions-para {
-        font-family: SFRegular;
-        font-size: 2rem;
-        line-height: 2.5rem; }
-    .main-section .our-solutions .choices-cont {
-      width: 33.33%;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 5rem;
-      justify-content: space-between; }
-      .main-section .our-solutions .choices-cont .choice:not(:last-of-type) {
-        margin-bottom: 5rem; }
-      .main-section .our-solutions .choices-cont .choice-number {
-        font-family: SFSemiBold;
-        font-size: 2rem;
-        color: #8C8C8E;
-        margin-bottom: 1.5rem; }
-      .main-section .our-solutions .choices-cont .choice-name {
-        font-family: SFSemiBold;
-        font-size: 2.2rem; }
-    .main-section .our-solutions .service-detail {
-      width: 33.34%;
-      background-color: #3A404A;
-      padding: 5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; }
-      .main-section .our-solutions .service-detail .choice-icon {
-        margin-top: 14rem; }
-      .main-section .our-solutions .service-detail .choice-title {
-        font-family: SFSemiBold;
-        font-size: 2.8rem;
-        line-height: 3.4rem;
-        margin-bottom: 5rem;
-        margin-top: 10rem;
-        color: #FFFFFF; }
-      .main-section .our-solutions .service-detail .choice-text {
-        font-family: SFMedium;
-        font-size: 2rem;
-        line-height: 3rem;
-        margin-bottom: 9rem;
-        color: #FFFFFF; }
-      .main-section .our-solutions .service-detail .prev-next-cont {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%; }
-        .main-section .our-solutions .service-detail .prev-next-cont .prev-cont .prev-title {
-          font-family: SFMedium;
-          font-size: 1.5rem;
-          line-height: 2rem;
-          margin-bottom: 3.1rem;
-          color: #FFFFFF; }
-        .main-section .our-solutions .service-detail .prev-next-cont .next-cont .next-title {
-          font-family: SFMedium;
-          font-size: 1.5rem;
-          line-height: 2rem;
-          margin-bottom: 3.1rem;
-          color: #FFFFFF; }
-  .main-section .our-people {
+    margin-top: 8rem;
+}
+
+.main-section .our-solutions .main-cont {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    padding-right: 18rem;
+    align-items: flex-start;
+}
+
+.main-section .our-solutions .main-cont .solutions-num {
+    width: 100%;
+}
+
+.main-section .our-solutions .main-cont .solutions-title {
+    font-family: SFSemiBold;
+    font-size: 9rem;
+    margin-bottom: 3rem;
+}
+
+.main-section .our-solutions .main-cont .solutions-para {
+    font-family: SFRegular;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.main-section .our-solutions .choices-cont {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem;
+    justify-content: space-between;
+}
+
+.main-section .our-solutions .choices-cont .choice:not(:last-of-type) {
+    margin-bottom: 5rem;
+}
+
+.main-section .our-solutions .choices-cont .choice-number {
+    font-family: SFSemiBold;
+    font-size: 2rem;
+    color: #8C8C8E;
+    margin-bottom: 1.5rem;
+}
+
+.main-section .our-solutions .choices-cont .choice-name {
+    font-family: SFSemiBold;
+    font-size: 2.2rem;
+}
+
+.main-section .our-solutions .service-detail {
+    width: 33.34%;
+    background-color: #3A404A;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-section .our-solutions .service-detail .choice-icon {
+    margin-top: 14rem;
+}
+
+.main-section .our-solutions .service-detail .choice-title {
+    font-family: SFSemiBold;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+    color: #FFFFFF;
+}
+
+.main-section .our-solutions .service-detail .choice-text {
+    font-family: SFMedium;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 9rem;
+    color: #FFFFFF;
+}
+
+.main-section .our-solutions .service-detail .prev-next-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main-section .our-solutions .service-detail .prev-next-cont .prev-cont .prev-title {
+    font-family: SFMedium;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 3.1rem;
+    color: #FFFFFF;
+}
+
+.main-section .our-solutions .service-detail .prev-next-cont .next-cont .next-title {
+    font-family: SFMedium;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 3.1rem;
+    color: #FFFFFF;
+}
+
+.main-section .our-people {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 18rem;
-    padding-right: 18rem; }
-    .main-section .our-people .our-people-title {
-      font-family: SFSemiBold;
-      font-size: 9rem;
-      margin-top: 8rem;
-      margin-bottom: 4rem; }
-    .main-section .our-people .our-team-members {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-      .main-section .our-people .our-team-members .single-member {
-        width: 24%;
-        margin-bottom: 1.5rem;
-        position: relative; }
-        .main-section .our-people .our-team-members .single-member .member-pic {
-          width: 100%;
-          height: 100%;
-          filter: grayscale(100%);
-          object-fit: cover; }
-        .main-section .our-people .our-team-members .single-member .member-info {
-          position: absolute;
-          bottom: 5%;
-          left: 5%; }
-          .main-section .our-people .our-team-members .single-member .member-info .member-name {
-            color: #FFFFFF;
-            font-family: SFSemiBold;
-            font-size: 2.5rem; }
-          .main-section .our-people .our-team-members .single-member .member-info .member-job-title {
-            color: #FFFFFF;
-            font-family: SFRegular;
-            font-size: 1.5rem; }
-  .main-section .footer {
+    padding-right: 18rem;
+}
+
+.main-section .our-people .our-people-title {
+    font-family: SFSemiBold;
+    font-size: 9rem;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.main-section .our-people .our-team-members {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-section .our-people .our-team-members .single-member {
+    width: 24%;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.main-section .our-people .our-team-members .single-member .member-pic {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+.main-section .our-people .our-team-members .single-member .member-info {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.main-section .our-people .our-team-members .single-member .member-info .member-name {
+    color: #FFFFFF;
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+}
+
+.main-section .our-people .our-team-members .single-member .member-info .member-job-title {
+    color: #FFFFFF;
+    font-family: SFRegular;
+    font-size: 1.5rem;
+}
+
+.main-section .footer {
     width: 100%;
     min-height: 20rem;
     padding-left: 18rem;
@@ -532,303 +735,406 @@ body {
     padding-top: 17.5rem;
     background-image: url("../../img/footer-pic.svg");
     background-repeat: no-repeat;
-    background-size: cover; }
-    .main-section .footer .logo-box {
-      width: 33.33%;
-      display: flex; }
-      .main-section .footer .logo-box .logo-footer {
-        width: 100%; }
-    .main-section .footer .quick-access-links-cont {
-      width: 33.33%;
-      display: flex;
-      flex-direction: column;
-      padding-left: 7rem; }
-      .main-section .footer .quick-access-links-cont .quick-access-link-title {
-        font-family: SFSemiBold;
-        font-size: 3rem;
-        margin-bottom: 3.5rem;
-        color: #FFFFFF; }
-      .main-section .footer .quick-access-links-cont .links {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap; }
-        .main-section .footer .quick-access-links-cont .links .quick-link {
-          font-family: SFRegular;
-          font-size: 2rem;
-          width: 49%; }
-          .main-section .footer .quick-access-links-cont .links .quick-link:not(:last-of-type) {
-            margin-bottom: 3rem; }
-    .main-section .footer .contact-details-cont {
-      width: 33.34%; }
-      .main-section .footer .contact-details-cont .contact-details-title {
-        font-family: SFSemiBold;
-        font-size: 3rem;
-        margin-bottom: 3.5rem;
-        color: #FFFFFF; }
-      .main-section .footer .contact-details-cont .contact-single-detail {
-        display: flex;
-        align-items: center;
-        margin-bottom: 3rem; }
-        .main-section .footer .contact-details-cont .contact-single-detail .single-details-title {
-          color: #FFFFFF;
-          margin-left: 3rem; }
-      .main-section .footer .contact-details-cont .social-media-cont .social-media-title {
-        font-family: SFSemiBold;
-        font-size: 3rem;
-        margin-bottom: 3.5rem;
-        color: #FFFFFF; }
-      .main-section .footer .contact-details-cont .social-media-cont .social-media-icons {
-        display: flex; }
-        .main-section .footer .contact-details-cont .social-media-cont .social-media-icons a {
-          margin-right: 2rem; }
+    background-size: cover;
+}
+
+.main-section .footer .logo-box {
+    width: 33.33%;
+    display: flex;
+}
+
+.main-section .footer .logo-box .logo-footer {
+    width: 100%;
+}
+
+.main-section .footer .quick-access-links-cont {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7rem;
+}
+
+.main-section .footer .quick-access-links-cont .quick-access-link-title {
+    font-family: SFSemiBold;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    color: #FFFFFF;
+}
+
+.main-section .footer .quick-access-links-cont .links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-section .footer .quick-access-links-cont .links .quick-link {
+    font-family: SFRegular;
+    font-size: 2rem;
+    width: 49%;
+}
+
+.main-section .footer .quick-access-links-cont .links .quick-link:not(:last-of-type) {
+    margin-bottom: 3rem;
+}
+
+.main-section .footer .contact-details-cont {
+    width: 33.34%;
+}
+
+.main-section .footer .contact-details-cont .contact-details-title {
+    font-family: SFSemiBold;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    color: #FFFFFF;
+}
+
+.main-section .footer .contact-details-cont .contact-single-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.main-section .footer .contact-details-cont .contact-single-detail .single-details-title {
+    color: #FFFFFF;
+    margin-left: 3rem;
+}
+
+.main-section .footer .contact-details-cont .social-media-cont .social-media-title {
+    font-family: SFSemiBold;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    color: #FFFFFF;
+}
+
+.main-section .footer .contact-details-cont .social-media-cont .social-media-icons {
+    display: flex;
+}
+
+.main-section .footer .contact-details-cont .social-media-cont .social-media-icons a {
+    margin-right: 2rem;
+}
 
 .hidden {
-  display: none; }
+    display: none;
+}
 
 @media screen and (max-width: 1440px) {
-  html {
-    font-size: 50%; } }
+    html {
+        font-size: 50%;
+    }
+}
 
 @media screen and (max-width: 1024px) {
-  html {
-    font-size: 40%; }
-  .main-section .hero-section {
-    z-index: -1; }
-  .icigai-header {
-    padding: 5rem; }
-  .side-bar-btn {
-    display: block; }
-  .open-side-nav {
-    display: block; }
-  .icigai-header .nav-list {
-    display: none; }
-  .main-section .hero-section {
-    padding: 5rem; }
-  .main-section .hero-section .primary-text .secondary-text {
-    flex-direction: column; }
-  .main-section
-.hero-section
-.primary-text
-.secondary-text
-.development-cont
-.hero-paragraph,
-  .main-section
-.hero-section
-.primary-text
-.secondary-text
-.design-cont
-.hero-paragraph {
-    font-size: 2.9rem !important; }
-  .main-section .hero-section .primary-text .secondary-text .development-cont {
-    margin-right: unset;
-    margin-bottom: 5rem; }
-  .about-us-num-cont {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto; }
-  .about-us-num {
-    width: 100%; }
-  .main-section .about-us__headers {
-    align-items: flex-start !important;
-    flex-direction: column-reverse !important; }
-  .main-section .about-us {
-    margin-top: 4rem; }
-  .main-section .about-us .info-cont {
-    flex-direction: column;
-    flex-wrap: unset;
-    justify-content: space-between; }
-  .main-section .about-us .info-cont .icigai-info {
-    width: 100% !important;
-    margin-bottom: 3.3rem !important; }
-  .main-section .about-us-follow-up .first-pic-cont {
-    margin-left: unset; }
-  .main-section
-.about-us-follow-up
-.video-cont
-.about-us-extra
-.about-us-title-pic {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 6%; }
-  .main-section .about-us-follow-up .video-cont .about-us-extra {
-    margin-right: 3rem;
-    margin-left: 17rem; }
-  .main-section .our-services {
-    flex-direction: column;
-    margin-top: 0; }
-  .main-section .our-services .main-cont .services-num {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto; }
-  .main-section .our-services .main-cont {
-    padding: 5rem;
-    width: 100%; }
-  .main-section .our-services .choices-cont {
-    width: 100%;
-    padding: 5rem;
-    justify-content: unset; }
-  .main-section .our-services .choices-cont .choices-left {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; }
-  .main-section .our-services .choices-cont .choicecs-right {
-    width: 100%;
-    display: flex;
-    justify-content: space-around; }
-  .main-section .our-services .service-detail {
-    width: 100%;
-    align-items: center; }
-  .main-section .our-services .service-detail .choice-icon {
-    margin-top: 0rem; }
-  .main-section .our-services .service-detail .choice-title {
-    text-align: center; }
-  .main-section .our-services .service-detail .choice-text {
-    margin-bottom: 4rem; }
-  .main-section .about-us {
-    padding: 5rem; }
-  .main-section .our-industries {
-    padding: 5rem;
-    margin-top: 3rem; }
-  .main-section .our-industries .industries {
-    margin-top: 7rem; }
-  .main-section .our-industries .industries .single-industry {
-    width: 30%; }
-  .main-section .our-solutions {
-    flex-direction: column;
-    margin-top: 0; }
-  .main-section .our-solutions .main-cont {
-    width: 100%;
-    flex-direction: column;
-    padding: 5rem; }
-  .main-section .our-solutions .main-cont .solutions-num {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto; }
-  .main-section .our-solutions .choices-cont {
-    width: 100%;
-    padding: 5rem;
-    justify-content: unset; }
-  .main-section .our-solutions .choices-cont .choices-left {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; }
-  .main-section .our-solutions .choices-cont .choicecs-right {
-    display: flex;
-    justify-content: space-around;
-    width: 100%; }
-  .main-section .our-solutions .service-detail {
-    width: 100%;
-    padding: 5rem;
-    align-items: center; }
-  .main-section .our-solutions .service-detail .choice-title {
-    text-align: center; }
-  .main-section .our-solutions .service-detail .choice-text {
-    text-align: center; }
-  .main-section .our-solutions .service-detail .choice-icon {
-    margin-top: 0; }
-  .main-section .our-people .our-team-members .single-member {
-    width: 32%; }
-  .main-section .footer .logo-box {
-    display: none; }
-  .main-section .footer {
-    align-items: center; }
-  .main-section .footer .quick-access-links-cont {
-    width: 50%;
-    padding-left: 0; }
-  .main-section .footer .contact-details-cont {
-    width: 50%; } }
+    html {
+        font-size: 40%;
+    }
+    .main-section .hero-section {
+        z-index: -1;
+    }
+    .icigai-header {
+        padding: 5rem;
+    }
+    .side-bar-btn {
+        display: block;
+    }
+    .open-side-nav {
+        display: block;
+    }
+    .icigai-header .nav-list {
+        display: none;
+    }
+    .main-section .hero-section {
+        padding: 5rem;
+    }
+    .main-section .hero-section .primary-text .secondary-text {
+        flex-direction: column;
+    }
+    .main-section .hero-section .primary-text .secondary-text .development-cont .hero-paragraph,
+    .main-section .hero-section .primary-text .secondary-text .design-cont .hero-paragraph {
+        font-size: 2.9rem !important;
+    }
+    .main-section .hero-section .primary-text .secondary-text .development-cont {
+        margin-right: unset;
+        margin-bottom: 5rem;
+    }
+    .about-us-num-cont {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-us-num {
+        width: 100%;
+    }
+    .main-section .about-us__headers {
+        align-items: flex-start !important;
+        flex-direction: column-reverse !important;
+    }
+    .main-section .about-us {
+        margin-top: 4rem;
+    }
+    .main-section .about-us .info-cont {
+        flex-direction: column;
+        flex-wrap: unset;
+        justify-content: space-between;
+    }
+    .main-section .about-us .info-cont .icigai-info {
+        width: 100% !important;
+        margin-bottom: 3.3rem !important;
+    }
+    .main-section .about-us-follow-up .first-pic-cont {
+        margin-left: unset;
+    }
+    .main-section .about-us-follow-up .video-cont .about-us-extra .about-us-title-pic {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 6%;
+    }
+    .main-section .about-us-follow-up .video-cont .about-us-extra {
+        margin-right: 3rem;
+        margin-left: 17rem;
+    }
+    .main-section .our-services {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .main-section .our-services .main-cont .services-num {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-section .our-services .main-cont {
+        padding: 5rem;
+        width: 100%;
+    }
+    .main-section .our-services .choices-cont {
+        width: 100%;
+        padding: 5rem;
+        justify-content: unset;
+    }
+    .main-section .our-services .choices-cont .choices-left {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-section .our-services .choices-cont .choicecs-right {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-section .our-services .service-detail {
+        width: 100%;
+        align-items: center;
+    }
+    .main-section .our-services .service-detail .choice-icon {
+        margin-top: 0rem;
+    }
+    .main-section .our-services .service-detail .choice-title {
+        text-align: center;
+    }
+    .main-section .our-services .service-detail .choice-text {
+        margin-bottom: 4rem;
+    }
+    .main-section .about-us {
+        padding: 5rem;
+    }
+    .main-section .our-industries {
+        padding: 5rem;
+        margin-top: 3rem;
+    }
+    .main-section .our-industries .industries {
+        margin-top: 7rem;
+    }
+    .main-section .our-industries .industries .single-industry {
+        width: 30%;
+    }
+    .main-section .our-solutions {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .main-section .our-solutions .main-cont {
+        width: 100%;
+        flex-direction: column;
+        padding: 5rem;
+    }
+    .main-section .our-solutions .main-cont .solutions-num {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-section .our-solutions .choices-cont {
+        width: 100%;
+        padding: 5rem;
+        justify-content: unset;
+    }
+    .main-section .our-solutions .choices-cont .choices-left {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main-section .our-solutions .choices-cont .choicecs-right {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .main-section .our-solutions .service-detail {
+        width: 100%;
+        padding: 5rem;
+        align-items: center;
+    }
+    .main-section .our-solutions .service-detail .choice-title {
+        text-align: center;
+    }
+    .main-section .our-solutions .service-detail .choice-text {
+        text-align: center;
+    }
+    .main-section .our-solutions .service-detail .choice-icon {
+        margin-top: 0;
+    }
+    .main-section .our-people .our-team-members .single-member {
+        width: 32%;
+    }
+    .main-section .footer .logo-box {
+        display: none;
+    }
+    .main-section .footer {
+        align-items: center;
+    }
+    .main-section .footer .quick-access-links-cont {
+        width: 50%;
+        padding-left: 0;
+    }
+    .main-section .footer .contact-details-cont {
+        width: 50%;
+    }
+}
 
 @media screen and (max-width: 1024px) {
-  html {
-    font-size: 30%; } }
+    html {
+        font-size: 30%;
+    }
+}
 
 @media screen and (max-width: 768px) {
-  .main-section .our-services .choices-cont .choicecs-right {
-    display: none; }
-  .hidden {
-    display: block; }
-  .main-section .our-services .choices-cont .choices-left {
-    flex-wrap: wrap; }
-  .choice {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .main-section .our-services .choices-cont .choice-name {
-    text-align: center; }
-  .main-section .our-solutions .choices-cont .choicecs-right {
-    display: none; }
-  .main-section .our-solutions .choices-cont .choices-left {
-    flex-wrap: wrap; }
-  .main-section .about-us-follow-up .video-cont .video {
-    display: none; }
-  .main-section .about-us-follow-up .video-cont .about-us-extra {
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
-    padding-left: 5rem;
-    padding-right: 5rem; }
-  .main-section
-.about-us-follow-up
-.video-cont
-.about-us-extra
-.about-us-title-pic {
-    width: 4%; }
-  .main-section .about-us-follow-up .video-cont .about-us-extra .read-more-btn {
-    margin-top: 3rem; }
-  .main-section .our-industries .industries .single-industry .industry-name {
-    text-align: center; }
-  .main-section .our-solutions .choices-cont .choice-name {
-    text-align: center; }
-  .main-section .our-people .our-team-members .single-member {
-    width: 49%; }
-  .main-section .our-people {
-    padding-left: 5rem;
-    padding-right: 5rem; }
-  .main-section .footer {
-    padding: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5rem;
-    padding-top: 5rem;
-    background-image: unset;
-    background-repeat: unset;
-    background-size: unset;
-    background-color: #232A35; }
-  .main-section .footer .quick-access-links-cont {
-    width: 100%; }
-  .main-section .footer .contact-details-cont {
-    width: 100%;
-    margin-top: 3rem; }
-  .main-section .footer .social-media-cont {
-    margin-top: 4rem; }
-  .single-detail-icon {
-    width: 6%; }
-  .main-section
-.footer
-.contact-details-cont
-.contact-single-detail
-.single-details-title {
-    line-height: 3.5rem; }
-  .main-section
-.footer
-.contact-details-cont
-.social-media-cont
-.social-media-icons
-a {
-    margin-right: 10rem; } }
+    .main-section .our-services .choices-cont .choicecs-right {
+        display: none;
+    }
+    .hidden {
+        display: block;
+    }
+    .main-section .our-services .choices-cont .choices-left {
+        flex-wrap: wrap;
+    }
+    .choice {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-section .our-services .choices-cont .choice-name {
+        text-align: center;
+    }
+    .main-section .our-solutions .choices-cont .choicecs-right {
+        display: none;
+    }
+    .main-section .our-solutions .choices-cont .choices-left {
+        flex-wrap: wrap;
+    }
+    .main-section .about-us-follow-up .video-cont .video {
+        display: none;
+    }
+    .main-section .about-us-follow-up .video-cont .about-us-extra {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .main-section .about-us-follow-up .video-cont .about-us-extra .about-us-title-pic {
+        width: 4%;
+    }
+    .main-section .about-us-follow-up .video-cont .about-us-extra .read-more-btn {
+        margin-top: 3rem;
+    }
+    .main-section .our-industries .industries .single-industry .industry-name {
+        text-align: center;
+    }
+    .main-section .our-solutions .choices-cont .choice-name {
+        text-align: center;
+    }
+    .main-section .our-people .our-team-members .single-member {
+        width: 49%;
+    }
+    .main-section .our-people {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .main-section .footer {
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5rem;
+        padding-top: 5rem;
+        background-image: unset;
+        background-repeat: unset;
+        background-size: unset;
+        background-color: #232A35;
+    }
+    .main-section .footer .quick-access-links-cont {
+        width: 100%;
+    }
+    .main-section .footer .contact-details-cont {
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .main-section .footer .social-media-cont {
+        margin-top: 4rem;
+    }
+    .single-detail-icon {
+        width: 6%;
+    }
+    .main-section .footer .contact-details-cont .contact-single-detail .single-details-title {
+        line-height: 3.5rem;
+    }
+    .main-section .footer .contact-details-cont .social-media-cont .social-media-icons a {
+        margin-right: 10rem;
+    }
+}
 
 @media screen and (max-width: 375px) {
-  .main-section .our-industries .main-cont .description-cont .industries-text br {
-    display: none; }
-  .main-section .our-industries .industries .single-industry {
-    width: 50%; }
-  .choice {
-    width: 50%; }
-  .main-section .our-solutions .choices-cont .choice-name {
-    font-size: 3rem; }
-  .main-section .our-services .choices-cont .choice-name {
-    font-size: 3rem; } }
+    .main-section .our-industries .main-cont .description-cont .industries-text br {
+        display: none;
+    }
+    .main-section .our-industries .industries .single-industry {
+        width: 50%;
+    }
+    .choice {
+        width: 50%;
+    }
+    .main-section .our-solutions .choices-cont .choice-name {
+        font-size: 3rem;
+    }
+    .main-section .our-services .choices-cont .choice-name {
+        font-size: 3rem;
+    }
+}
+
+input:focus,
+textarea:focus,
+keygen:focus,
+select:focus {
+    outline: none;
+}
+
+::-moz-placeholder {
+    color: #666;
+    font-weight: 300;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    color: #666;
+    font-weight: 300;
+}
