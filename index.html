@@ -19,23 +19,23 @@
             <img src="img/icigai-logo.svg" alt="logo" class="icigai-logo">
         </div>
         <nav class="nav-list">
-            <a href="#about-us" class="nav-list__item">About Us</a>
-            <a href="#our-services" class="nav-list__item">Services</a>
-            <a href="#our-industries" class="nav-list__item">Industries</a>
-            <a href="#our-solutions" class="nav-list__item">Solutions</a>
-            <a href="#" class="nav-list__item">Projects</a>
-            <a href="#our-team" class="nav-list__item">Our Team</a>
-            <a href="#" class="nav-list__item">Contact</a>
+            <a onclick="closeNav()" href="#about-us" class="nav-list__item">About Us</a>
+            <a onclick="closeNav()" href="#our-services" class="nav-list__item">Services</a>
+            <a onclick="closeNav()" href="#our-industries" class="nav-list__item">Industries</a>
+            <a onclick="closeNav()" href="#our-solutions" class="nav-list__item">Solutions</a>
+            <a onclick="closeNav()" href="#" class="nav-list__item">Projects</a>
+            <a onclick="closeNav()" href="#our-team" class="nav-list__item">Our Team</a>
+            <a onclick="closeNav()" href="#" class="nav-list__item">Contact</a>
         </nav>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#about-us">About Us</a>
-            <a href="#our-services">Services</a>
-            <a href="#our-industries">Industries</a>
+            <a onclick="closeNav()" href="#about-us">About Us</a>
+            <a onclick="closeNav()" href="#our-services">Services</a>
+            <a onclick="closeNav()" href="#our-industries">Industries</a>
             <a href="#our-solutions">Solutions</a>
-            <a href="#">Projects</a>
-            <a href="#our-team">Our Team</a>
-            <a href="#">Contact</a>
+            <a onclick="closeNav()" href="#">Projects</a>
+            <a onclick="closeNav()" href="#our-team">Our Team</a>
+            <a onclick="closeNav()" href="#">Contact</a>
         </div>
 
         <!-- Use any element to open the sidenav -->
@@ -247,73 +247,193 @@
             </div>
             <div class="choices-cont">
                 <div class="choices-left">
-                    <div class="choice">
+                    <div class="choice dot" onclick="currentSlide(1)">
                         <h3 class="choice-number">01</h3>
                         <h3 class="choice-name">Data <br> Analytics</h3>
                     </div>
-                    <div class="choice">
-                        <h3 class="choice-number">02</h3>
+                    <div class="choice dot" onclick="currentSlide(2)">
+                        <h3 class="choice-number" >02</h3>
                         <h3 class="choice-name">Cyber <br> Security</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot" onclick="currentSlide(3)">
                         <h3 class="choice-number">03</h3>
                         <h3 class="choice-name">Internet <br> of Things</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot" onclick="currentSlide(4)">
                         <h3 class="choice-number">04</h3>
                         <h3 class="choice-name">Virtual <br> Realtiy</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot" onclick="currentSlide(5)">
                         <h3 class="choice-number">05</h3>
                         <h3 class="choice-name">Image <br> Analysis</h3>
                     </div>
-                    <div class="choice hidden">
+                    <div class="choice  hidden" >
                         <h3 class="choice-number">06</h3>
                         <h3 class="choice-name">Web <br> Portals</h3>
                     </div>
-                    <div class="choice hidden">
+                    <div class="choice  hidden" >
                         <h3 class="choice-number">07</h3>
                         <h3 class="choice-name">E-Commerce <br> Solutions</h3>
                     </div>
-                    <div class="choice hidden">
+                    <div class="choice  hidden" >
                         <h3 class="choice-number">08</h3>
                         <h3 class="choice-name">Fleet <br> Management</h3>
                     </div>
-                    <div class="choice hidden">
+                    <div class="choice  hidden" onclick="currentSlide(9)">
                         <h3 class="choice-number">09</h3>
                         <h3 class="choice-name">ERP <br> Solutions</h3>
                     </div>
                 </div>
-                <div class="choicecs-right">
-                    <div class="choice">
+                <div class="choicecs-right" >
+                    <div class="choice dot" onclick="currentSlide(6)">
                         <h3 class="choice-number">06</h3>
                         <h3 class="choice-name">Web <br> Portals</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot" onclick="currentSlide(7)">
                         <h3 class="choice-number">07</h3>
                         <h3 class="choice-name">E-Commerce <br> Solutions</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot" onclick="currentSlide(8)">
                         <h3 class="choice-number">08</h3>
                         <h3 class="choice-name">Fleet <br> Management</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot" onclick="currentSlide(9)">
                         <h3 class="choice-number">09</h3>
                         <h3 class="choice-name">ERP <br> Solutions</h3>
                     </div>
                 </div>
             </div>
-            <div class="service-detail">
+            <div class="service-detail fade2 ss">
+                <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
+                <h1 class="choice-title">Data <br> Analytics</h1>
+                <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider as an extended team or as a part of your organization./p>
+                    <div class="prev-next-cont">
+                        <div class="prev-cont" onclick="plusSlides(-1)">
+                            <h1 class="prev-title">ERP <br> Solutions</h1>
+                            <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                        </div>
+                        <div class="next-cont" onclick="plusSlides(1)">
+                            <h1 class="next-title">Cyber <br> Security</h1>
+                            <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                        </div>
+                    </div>
+            </div>
+            <div class="service-detail fade2 ss" style="display:flex">
+                <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
+                <h1 class="choice-title">Data <br> Analytics</h1>
+                <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider as an extended team or as a part of your organization./p>
+                    <div class="prev-next-cont">
+                        <div class="prev-cont" onclick="plusSlides(-1)">
+                            <h1 class="prev-title">ERP <br> Solutions</h1>
+                            <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                        </div>
+                        <div class="next-cont" onclick="plusSlides(1)">
+                            <h1 class="next-title">Cyber <br> Security</h1>
+                            <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                        </div>
+                    </div>
+            </div>
+            <div class="service-detail fade2 ss">
+                <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
+                <h1 class="choice-title">Data <br> Analytics</h1>
+                <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider as an extended team or as a part of your organization./p>
+                    <div class="prev-next-cont">
+                        <div class="prev-cont" onclick="plusSlides(-1)">
+                            <h1 class="prev-title">ERP <br> Solutions</h1>
+                            <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                        </div>
+                        <div class="next-cont" onclick="plusSlides(1)">
+                            <h1 class="next-title">Cyber <br> Security</h1>
+                            <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                        </div>
+                    </div>
+            </div>
+            <div class="service-detail fade2 ss">
+                <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
+                <h1 class="choice-title">Data <br> Analytics</h1>
+                <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider as an extended team or as a part of your organization./p>
+                    <div class="prev-next-cont">
+                        <div class="prev-cont" onclick="plusSlides(-1)">
+                            <h1 class="prev-title">ERP <br> Solutions</h1>
+                            <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                        </div>
+                        <div class="next-cont" onclick="plusSlides(1)">
+                            <h1 class="next-title">Cyber <br> Security</h1>
+                            <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                        </div>
+                    </div>
+            </div>
+            <div class="service-detail fade2 ss">
+                <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
+                <h1 class="choice-title">Data <br> Analytics</h1>
+                <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider as an extended team or as a part of your organization./p>
+                    <div class="prev-next-cont">
+                        <div class="prev-cont" onclick="plusSlides(-1)">
+                            <h1 class="prev-title">ERP <br> Solutions</h1>
+                            <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                        </div>
+                        <div class="next-cont" onclick="plusSlides(1)">
+                            <h1 class="next-title">Cyber <br> Security</h1>
+                            <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                        </div>
+                    </div>
+            </div>
+            <div class="service-detail fade2 ss">
+                <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
+                <h1 class="choice-title">Data <br> Analytics</h1>
+                <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider as an extended team or as a part of your organization./p>
+                    <div class="prev-next-cont">
+                        <div class="prev-cont" onclick="plusSlides(-1)">
+                            <h1 class="prev-title">ERP <br> Solutions</h1>
+                            <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                        </div>
+                        <div class="next-cont" onclick="plusSlides(1)">
+                            <h1 class="next-title">Cyber <br> Security</h1>
+                            <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                        </div>
+                    </div>
+            </div>
+            <div class="service-detail fade2 ss">
+                <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
+                <h1 class="choice-title">Data <br> Analytics</h1>
+                <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider as an extended team or as a part of your organization./p>
+                    <div class="prev-next-cont">
+                        <div class="prev-cont" onclick="plusSlides(-1)">
+                            <h1 class="prev-title">ERP <br> Solutions</h1>
+                            <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                        </div>
+                        <div class="next-cont" onclick="plusSlides(1)">
+                            <h1 class="next-title">Cyber <br> Security</h1>
+                            <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                        </div>
+                    </div>
+            </div>
+            <div class="service-detail fade2 ss">
                 <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
                 <h1 class="choice-title">Data <br> Analytics</h1>
                 <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider as an extended team or as a part of your organization./p>
                     <div class="prev-next-cont">
                         <div class="prev-cont">
-                            <h1 class="prev-title">ERP <br> Solutions</h1>
+                            <h1 class="prev-title" onclick="plusSlides(-1)">ERP <br> Solutions</h1>
+                            <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                        </div>
+                        <div class="next-cont" onclick="plusSlides(1)">
+                            <h1 class="next-title">Cyber <br> Security</h1>
+                            <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                        </div>
+                    </div>
+            </div>
+            <div class="service-detail fade2 ss">
+                <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
+                <h1 class="choice-title">Data <br> Analytics</h1>
+                <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider as an extended team or as a part of your organization./p>
+                    <div class="prev-next-cont">
+                        <div class="prev-cont">
+                            <h1 class="prev-title" onclick="plusSlides(-1)">ERP <br> Solutions</h1>
                             <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
                         </div>
                         <div class="next-cont">
-                            <h1 class="next-title">Cyber <br> Security</h1>
+                            <h1 class="next-title" onclick="plusSlides(1)">Cyber <br> Security</h1>
                             <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
                         </div>
                     </div>
@@ -465,10 +585,10 @@
 
             <div class="contact-wrapper">
 
-                <!---------------- 
-        
-              CONTACT PAGE LEFT 
-            
+                <!----------------
+
+              CONTACT PAGE LEFT
+
               ----------------->
 
                 <form id="contact-form" class="form-horizontal" role="form">
@@ -489,10 +609,10 @@
 
                 </form>
 
-                <!---------------- 
-        
-              CONTACT PAGE RIGHT 
-            
+                <!----------------
+
+              CONTACT PAGE RIGHT
+
               ----------------->
 
                 <div class="direct-contact-container">
@@ -592,6 +712,31 @@
             e.target.elements.email.value = '';
             e.target.elements.message.value = '';
         });
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+        function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("ss");
+  var dots = document.getElementsByClassName("choice");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
     </script>
 </body>
 
