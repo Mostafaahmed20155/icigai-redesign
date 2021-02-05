@@ -10,7 +10,9 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-
+.choice h3{
+  color: #8C8C8E;
+}
 body {
     box-sizing: border-box;
     background-color: #E9EAED;
@@ -845,9 +847,7 @@ body h3 {
         display: none;
     }
     .main-section .hero-section {
-      margin: auto;
-  width: 100%;
-  margin-top: 70px;
+        padding: 2rem;
     }
     .main-section .hero-section .primary-text .secondary-text {
         flex-direction: column;
