@@ -907,12 +907,12 @@ body h3 {
         margin-right: auto;
     }
     .main-section .our-services .main-cont {
-        padding: 5rem;
+        padding: 2rem;
         width: 100%;
     }
     .main-section .our-services .choices-cont {
         width: 100%;
-        padding: 5rem;
+        padding: 2rem;
         justify-content: unset;
     }
     .main-section .our-services .choices-cont .choices-left {
@@ -939,7 +939,7 @@ body h3 {
         margin-bottom: 4rem;
     }
     .main-section .about-us {
-        padding: 5rem;
+        padding: 2rem;
     }
     .main-section .our-industries {
         padding: 5rem;
@@ -958,7 +958,7 @@ body h3 {
     .main-section .our-solutions .main-cont {
         width: 100%;
         flex-direction: column;
-        padding: 5rem;
+        padding: 2rem;
     }
     .main-section .our-solutions .main-cont .solutions-num {
         width: 50%;
@@ -967,7 +967,7 @@ body h3 {
     }
     .main-section .our-solutions .choices-cont {
         width: 100%;
-        padding: 5rem;
+        padding: 2rem;
         justify-content: unset;
     }
     .main-section .our-solutions .choices-cont .choices-left {
@@ -982,7 +982,7 @@ body h3 {
     }
     .main-section .our-solutions .service-detail {
         width: 100%;
-        padding: 5rem;
+        padding: 2rem;
         align-items: center;
     }
     .main-section .our-solutions .service-detail .choice-title {
@@ -1073,11 +1073,11 @@ body h3 {
         padding-right: 5rem;
     }
     .main-section .footer {
-        padding: 5rem;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5rem;
+        padding: 2rem;
         padding-top: 5rem;
         background-image: unset;
         background-repeat: unset;
