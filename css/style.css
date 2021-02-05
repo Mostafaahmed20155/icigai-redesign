@@ -845,7 +845,9 @@ body h3 {
         display: none;
     }
     .main-section .hero-section {
-        padding: 5rem;
+      margin: auto;
+  width: 100%;
+  margin-top: 70px;
     }
     .main-section .hero-section .primary-text .secondary-text {
         flex-direction: column;
