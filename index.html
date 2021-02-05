@@ -10,7 +10,7 @@
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="css/custom.css"> 
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             <img src="img/icigai-logo.svg" alt="logo" class="icigai-logo">
         </div>
         <nav class="nav-list">
-            <a onclick="closeNav()" href="#about-us" class="nav-list__item">About Us</a>
+            <a onclick="closeNav()" href="#about-us" class="nav-list__item lactive">About Us</a>
             <a onclick="closeNav()" href="#our-services" class="nav-list__item">Services</a>
             <a onclick="closeNav()" href="#our-industries" class="nav-list__item">Industries</a>
             <a onclick="closeNav()" href="#our-solutions" class="nav-list__item">Solutions</a>
@@ -43,7 +43,7 @@
                 class="side-bar-btn"></span>
     </header>
     <main class="main-section">
-        <div class="hero-section">
+        <div class="hero-section section" id="about-us">
             <div class="primary-text">
                 <h1 class="primary-header">Professionals <br> with different <br> skills</h1>
                 <div class="secondary-text">
@@ -61,7 +61,7 @@
             </div>
             <!-- <img src="img/robot.svg" alt="robot" class="robot-img"> -->
         </div>
-        <div class="about-us" id="about-us">
+        <div class="about-us section" id="about-us">
             <div class="about-us__headers">
                 <div class="about-us__headers-title">
                     <h3 class="subtitle">Representing as</h3>
@@ -109,7 +109,7 @@
                 <img src="img/video.png" alt="video" class="video">
             </div>
         </div>
-        <div class="our-services" id="our-services">
+        <div class="our-services section" id="our-services">
             <div class="main-cont">
                 <img src="img/services-num.svg" alt="services-num" class="services-num">
                 <h1 class="services-title">Services</h1>
@@ -121,27 +121,27 @@
             </div>
             <div class="choices-cont">
                 <div class="choices-left">
-                    <div class="choice">
+                    <div class="choice dot1" onclick="currentSlide1(1)">
                         <h3 class="choice-number">01</h3>
                         <h3 class="choice-name">Software <br> Development</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot1" onclick="currentSlide1(2)">
                         <h3 class="choice-number">02</h3>
                         <h3 class="choice-name">Testing and QA</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot1" onclick="currentSlide1(3)">
                         <h3 class="choice-number">03</h3>
                         <h3 class="choice-name">Application <br> Services</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot1" onclick="currentSlide1(4)">
                         <h3 class="choice-number">04</h3>
                         <h3 class="choice-name">UI/UX Design <br> and Development</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot1" onclick="currentSlide1(5)">
                         <h3 class="choice-number">05</h3>
                         <h3 class="choice-name">Infrastructure <br> Services</h3>
                     </div>
-                    <div class="choice hidden">
+                    <div class="choice hidden" >
                         <h3 class="choice-number">06</h3>
                         <h3 class="choice-name">Managed IT <br> Services</h3>
                     </div>
@@ -159,25 +159,190 @@
                     </div>
                 </div>
                 <div class="choicecs-right">
-                    <div class="choice">
+                    <div class="choice dot1" onclick="currentSlide1(6)">
                         <h3 class="choice-number">06</h3>
                         <h3 class="choice-name">Managed IT <br> Services</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot1" onclick="currentSlide1(7)">
                         <h3 class="choice-number">07</h3>
                         <h3 class="choice-name">IT <br> Outsourcing</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot1" onclick="currentSlide1(8)">
                         <h3 class="choice-number">08</h3>
                         <h3 class="choice-name">IT <br> Consulting</h3>
                     </div>
-                    <div class="choice">
+                    <div class="choice dot1"onclick="currentSlide1(9)">
                         <h3 class="choice-number">09</h3>
                         <h3 class="choice-name">IT <br> Support</h3>
                     </div>
                 </div>
             </div>
-            <div class="service-detail">
+            <div class="service-detail fade2 ss1">
+                <img src="img/software development.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Software <br> Development</h1>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects
+                </p>
+                <div class="prev-next-cont">
+                    <div class="prev-cont" onclick="plusSlides1(-1)">
+                        <h1 class="prev-title">IT <br> Support</h1>
+                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                    </div>
+                    <div class="next-cont" onclick="plusSlides1(1)">
+                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="service-detail fade2 ss1">
+                <img src="img/software development.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Software <br> Development</h1>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects
+                </p>
+                <div class="prev-next-cont">
+                    <div class="prev-cont" onclick="plusSlides1(-1)">
+                        <h1 class="prev-title">IT <br> Support</h1>
+                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                    </div>
+                    <div class="next-cont" onclick="plusSlides1(1)">
+                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="service-detail fade2 ss1">
+                <img src="img/software development.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Software <br> Development</h1>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects
+                </p>
+                <div class="prev-next-cont">
+                    <div class="prev-cont" onclick="plusSlides1(-1)">
+                        <h1 class="prev-title">IT <br> Support</h1>
+                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                    </div>
+                    <div class="next-cont" onclick="plusSlides1(1)">
+                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="service-detail fade2 ss1">
+                <img src="img/software development.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Software <br> Development</h1>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects
+                </p>
+                <div class="prev-next-cont">
+                    <div class="prev-cont" onclick="plusSlides1(-1)">
+                        <h1 class="prev-title">IT <br> Support</h1>
+                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                    </div>
+                    <div class="next-cont" onclick="plusSlides1(1)">
+                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="service-detail fade2 ss1">
+                <img src="img/software development.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Software <br> Development</h1>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects
+                </p>
+                <div class="prev-next-cont">
+                    <div class="prev-cont" onclick="plusSlides1(-1)">
+                        <h1 class="prev-title">IT <br> Support</h1>
+                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                    </div>
+                    <div class="next-cont" onclick="plusSlides1(1)">
+                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="service-detail fade2 ss1">
+                <img src="img/software development.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Software <br> Development</h1>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects
+                </p>
+                <div class="prev-next-cont">
+                    <div class="prev-cont" onclick="plusSlides1(-1)">
+                        <h1 class="prev-title">IT <br> Support</h1>
+                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                    </div>
+                    <div class="next-cont" onclick="plusSlides1(1)">
+                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="service-detail fade2 ss1">
+                <img src="img/software development.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Software <br> Development</h1>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects
+                </p>
+                <div class="prev-next-cont">
+                    <div class="prev-cont" onclick="plusSlides1(-1)">
+                        <h1 class="prev-title">IT <br> Support</h1>
+                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                    </div>
+                    <div class="next-cont" onclick="plusSlides1(1)">
+                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="service-detail fade2 ss1">
+                <img src="img/software development.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Software <br> Development</h1>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects
+                </p>
+                <div class="prev-next-cont">
+                    <div class="prev-cont" onclick="plusSlides1(-1)">
+                        <h1 class="prev-title">IT <br> Support</h1>
+                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                    </div>
+                    <div class="next-cont" onclick="plusSlides1(1)">
+                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="service-detail fade2 ss1">
+                <img src="img/software development.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Software <br> Development</h1>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects
+                </p>
+                <div class="prev-next-cont">
+                    <div class="prev-cont" onclick="plusSlides1(-1)">
+                        <h1 class="prev-title">IT <br> Support</h1>
+                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                    </div>
+                    <div class="next-cont" onclick="plusSlides1(1)">
+                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+            <div class="service-detail fade2 ss1">
                 <img src="img/software development.svg" alt="software-development" class="choice-icon">
                 <h1 class="choice-title">Software <br> Development</h1>
                 <p class="choice-text">We believe in channeling a systematic approach for our software development
@@ -196,7 +361,7 @@
                 </div>
             </div>
         </div>
-        <div class="our-industries" id="our-industries">
+        <div class="our-industries section" id="our-industries">
             <div class="main-cont">
                 <div class="description-cont">
                     <h1 class="industries-title">Our Industries</h1>
@@ -255,7 +420,7 @@
                 </div>
             </div>
         </div>
-        <div class="our-solutions" id="our-solutions">
+        <div class="our-solutions section" id="our-solutions">
             <div class="main-cont">
                 <img src="img/solutions-num.svg" alt="solutions-num" class="solutions-num">
                 <h1 class="solutions-title">Solutions</h1>
@@ -265,7 +430,7 @@
             </div>
             <div class="choices-cont">
                 <div class="choices-left">
-                    <div class="choice dot" onclick="currentSlide(1)">
+                    <div class="choice dot active" onclick="currentSlide(1)">
                         <h3 class="choice-number">01</h3>
                         <h3 class="choice-name">Data <br> Analytics</h3>
                     </div>
@@ -469,7 +634,7 @@
                 </div>
             </div>
         </div>
-        <div class="our-people" id="our-team">
+        <div class="our-people section" id="our-team">
             <h1 class="our-people-title">Our People</h1>
             <div class="our-team-members">
                 <div class="single-member">
@@ -621,7 +786,7 @@
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("ss");
-            var dots = document.getElementsByClassName("choice");
+            var dots = document.getElementsByClassName("dot");
             if (n > slides.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
@@ -633,6 +798,61 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
+
+        var slideIndex1 = 1;
+        showSlides1(slideIndex1);
+
+        function plusSlides1(n) {
+            showSlides1(slideIndex1 += n);
+        }
+
+        function currentSlide1(n) {
+            showSlides1(slideIndex1 = n);
+        }
+        function showSlides1(n) {
+            var i;
+            var slides = document.getElementsByClassName("ss1");
+            var dots = document.getElementsByClassName("dot1");
+            if (n > slides.length-1) { slideIndex1 = 1 }
+            if (n < 1) { slideIndex1 = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex1 - 1].style.display = "block";
+            dots[slideIndex1 - 1].className += " active";
+        }
+
+
+
+  var section = document.querySelectorAll(".section");
+  var sections = {};
+  var i = 0;
+
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop;
+  });
+
+  window.onscroll = () =>{
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (i in sections) {
+      // console.log(i)
+
+      if (sections[i] <= scrollPosition) {
+        console.log("a[href=#"+i+"]")
+
+        // console.log('postion:'+scrollPosition);
+        // console.log('section:'+sections[i]);
+        document.querySelector('.lactive').setAttribute('class', 'nav-list__item');
+        document.querySelector("a[href='#"+i+"']").setAttribute('class', 'nav-list__item lactive');
+      }
+    }
+  };
+
+
     </script>
 </body>
 

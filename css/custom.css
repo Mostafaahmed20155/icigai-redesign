@@ -17,11 +17,24 @@ body {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.active h3{
+  color: #000 !important;
+}
 .dot {
   cursor: pointer;
   transition: background-color 0.6s ease;
 }
-
+.dot1 {
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+.lactive {
+  color: #000 !important;
+}
+.choice h3{
+  color: #8C8C8E;
+}
 .dot .choice-name {
     color: #747576;
 }
