@@ -11,10 +11,12 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/custom.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body style="overflow-wrap: break-word;overflow-x: hidden;">
-    <header class="icigai-header">
+    <header class="icigai-header" data-aos="fade-down" data-aos-duration="2000">
         <div class="logo-box">
             <img src="img/icigai-logo.svg" alt="logo" class="icigai-logo">
         </div>
@@ -44,7 +46,7 @@
     </header>
     <main class="main-section">
         <div class="hero-section section" id="about-us">
-            <div class="primary-text">
+            <div class="primary-text" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000" >
                 <h1 class="primary-header">Professionals <br> with different <br> skills</h1>
                 <div class="secondary-text">
                     <div class="development-cont">
@@ -61,7 +63,7 @@
             </div>
             <!-- <img src="img/robot.svg" alt="robot" class="robot-img"> -->
         </div>
-        <div class="about-us section" id="about-us">
+        <div class="about-us section" id="about-us" data-aos="fade-up" data-aos-duration="2000">
             <div class="about-us__headers">
                 <div class="about-us__headers-title">
                     <h3 class="subtitle">Representing as</h3>
@@ -91,26 +93,26 @@
             </div>
         </div>
         <div class="about-us-follow-up">
-            <div class="first-pic-cont">
+            <div class="first-pic-cont" data-aos="fade-left" data-aos-duration="2000">
                 <img src="img/first-pic.png" alt="first-pic" class="first-pic">
             </div>
             <div class="video-cont">
                 <div class="about-us-extra">
-                    <h1 class="tech-title">A whole different kind of tech firm.</h1>
-                    <p class="extra-info-text">
+                    <h1 class="tech-title"  data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">A whole different kind of tech firm.</h1>
+                    <p class="extra-info-text"  data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">
                         ICIGAI is an industry-leading custom development company having a diverse team of mobile app
                         development professionals. We have our own way of getting things done in a fast and more
                         efficient way that helps us deliever projects in the shortest period
                         of time
                     </p>
-                    <a href="#" class="read-more-btn">Read more</a>
+                    <a href="#" class="read-more-btn"  data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">Read more</a>
                     <img src="img/about-us-title-pic.svg" alt="about-us-title" class="about-us-title-pic">
                 </div>
-                <img src="img/video.png" alt="video" class="video">
+                <img src="img/video.png" alt="video" class="video" data-aos="fade-left" data-aos-duration="2000">
             </div>
         </div>
         <div class="our-services section" id="our-services">
-            <div class="main-cont">
+            <div class="main-cont"  data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
                 <img src="img/services-num.svg" alt="services-num" class="services-num">
                 <h1 class="services-title">Services</h1>
                 <p class="services-para">We offer the full spectrum of services to help organizations work better.
@@ -119,7 +121,7 @@
                     better in future. Very few others do this, and none have been doing it as long as we have.
                 </p>
             </div>
-            <div class="choices-cont">
+            <div class="choices-cont"  data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
                 <div class="choices-left">
                     <div class="choice dot1" onclick="currentSlide1(1)">
                         <h3 class="choice-number">01</h3>
@@ -141,7 +143,7 @@
                         <h3 class="choice-number">05</h3>
                         <h3 class="choice-name">Infrastructure <br> Services</h3>
                     </div>
-                    <div class="choice hidden" >
+                    <div class="choice hidden">
                         <h3 class="choice-number">06</h3>
                         <h3 class="choice-name">Managed IT <br> Services</h3>
                     </div>
@@ -171,13 +173,13 @@
                         <h3 class="choice-number">08</h3>
                         <h3 class="choice-name">IT <br> Consulting</h3>
                     </div>
-                    <div class="choice dot1"onclick="currentSlide1(9)">
+                    <div class="choice dot1" onclick="currentSlide1(9)">
                         <h3 class="choice-number">09</h3>
                         <h3 class="choice-name">IT <br> Support</h3>
                     </div>
                 </div>
             </div>
-            <div class="service-detail fade2 ss1">
+            <div class="service-detail fade2 ss1"  data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1500">
                 <img src="img/software development.svg" alt="software-development" class="choice-icon">
                 <h1 class="choice-title">Software <br> Development</h1>
                 <p class="choice-text">We believe in channeling a systematic approach for our software development
@@ -196,8 +198,26 @@
                 </div>
             </div>
             <div class="service-detail fade2 ss1">
-                <img src="img/software development.svg" alt="software-development" class="choice-icon">
-                <h1 class="choice-title">Software <br> Development</h1>
+                <img src="img/testing.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Testing <br> and QA</h1>
+                <p class="choice-text">We believe in channeling a systematic approach for our software development
+                    solutions irrespective of their complexity. We deploy advanced technology for software development
+                    projects
+                </p>
+                <div class="prev-next-cont">
+                    <div class="prev-cont" onclick="plusSlides1(-1)">
+                        <h1 class="prev-title">Software <br> Development</h1>
+                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
+                    </div>
+                    <div class="next-cont" onclick="plusSlides1(1)">
+                        <h1 class="next-title">Application <br> Services</h1>
+                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="service-detail fade2 ss1">
+                <img src="img/Application-services.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Application <br> Services</h1>
                 <p class="choice-text">We believe in channeling a systematic approach for our software development
                     solutions irrespective of their complexity. We deploy advanced technology for software development
                     projects
@@ -214,155 +234,135 @@
                 </div>
             </div>
             <div class="service-detail fade2 ss1">
-                <img src="img/software development.svg" alt="software-development" class="choice-icon">
-                <h1 class="choice-title">Software <br> Development</h1>
+                <img src="img/ui-ux.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">UI/UX Design <br> and Development</h1>
                 <p class="choice-text">We believe in channeling a systematic approach for our software development
                     solutions irrespective of their complexity. We deploy advanced technology for software development
                     projects
                 </p>
                 <div class="prev-next-cont">
                     <div class="prev-cont" onclick="plusSlides1(-1)">
-                        <h1 class="prev-title">IT <br> Support</h1>
+                        <h1 class="prev-title">Application <br> Services</h1>
                         <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
                     </div>
                     <div class="next-cont" onclick="plusSlides1(1)">
-                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <h1 class="next-title">Infrastructure <br> Services</h1>
                         <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
                     </div>
                 </div>
             </div>
             <div class="service-detail fade2 ss1">
-                <img src="img/software development.svg" alt="software-development" class="choice-icon">
-                <h1 class="choice-title">Software <br> Development</h1>
+                <img src="img/infrastructure.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Infrastructure <br> Services</h1>
                 <p class="choice-text">We believe in channeling a systematic approach for our software development
                     solutions irrespective of their complexity. We deploy advanced technology for software development
                     projects
                 </p>
                 <div class="prev-next-cont">
                     <div class="prev-cont" onclick="plusSlides1(-1)">
-                        <h1 class="prev-title">IT <br> Support</h1>
+                        <h1 class="prev-title">UI/UX Design <br> and Development</h1>
                         <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
                     </div>
                     <div class="next-cont" onclick="plusSlides1(1)">
-                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <h1 class="next-title">Managed IT <br> Services</h1>
                         <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
                     </div>
                 </div>
             </div>
             <div class="service-detail fade2 ss1">
-                <img src="img/software development.svg" alt="software-development" class="choice-icon">
-                <h1 class="choice-title">Software <br> Development</h1>
+                <img src="img/managed-it-icon.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">Managed IT <br> Services</h1>
                 <p class="choice-text">We believe in channeling a systematic approach for our software development
                     solutions irrespective of their complexity. We deploy advanced technology for software development
                     projects
                 </p>
                 <div class="prev-next-cont">
                     <div class="prev-cont" onclick="plusSlides1(-1)">
-                        <h1 class="prev-title">IT <br> Support</h1>
+                        <h1 class="prev-title">Infrastructure <br> Services</h1>
                         <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
                     </div>
                     <div class="next-cont" onclick="plusSlides1(1)">
-                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <h1 class="next-title">IT <br> Outsourcing</h1>
                         <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
                     </div>
                 </div>
             </div>
             <div class="service-detail fade2 ss1">
-                <img src="img/software development.svg" alt="software-development" class="choice-icon">
-                <h1 class="choice-title">Software <br> Development</h1>
+                <img src="img/it-outsourcing.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">IT <br> Outsourcing</h1>
                 <p class="choice-text">We believe in channeling a systematic approach for our software development
                     solutions irrespective of their complexity. We deploy advanced technology for software development
                     projects
                 </p>
                 <div class="prev-next-cont">
                     <div class="prev-cont" onclick="plusSlides1(-1)">
-                        <h1 class="prev-title">IT <br> Support</h1>
+                        <h1 class="prev-title">Managed IT <br> Services</h1>
                         <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
                     </div>
                     <div class="next-cont" onclick="plusSlides1(1)">
-                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <h1 class="next-title">IT <br> Consulting</h1>
                         <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
                     </div>
                 </div>
             </div>
             <div class="service-detail fade2 ss1">
-                <img src="img/software development.svg" alt="software-development" class="choice-icon">
-                <h1 class="choice-title">Software <br> Development</h1>
+                <img src="img/it-consulting.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">IT <br> Consulting</h1>
                 <p class="choice-text">We believe in channeling a systematic approach for our software development
                     solutions irrespective of their complexity. We deploy advanced technology for software development
                     projects
                 </p>
                 <div class="prev-next-cont">
                     <div class="prev-cont" onclick="plusSlides1(-1)">
-                        <h1 class="prev-title">IT <br> Support</h1>
+                        <h1 class="prev-title">IT <br> Outsourcing</h1>
                         <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
                     </div>
                     <div class="next-cont" onclick="plusSlides1(1)">
-                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <h1 class="next-title">IT <br> Support</h1>
                         <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
                     </div>
                 </div>
             </div>
             <div class="service-detail fade2 ss1">
-                <img src="img/software development.svg" alt="software-development" class="choice-icon">
-                <h1 class="choice-title">Software <br> Development</h1>
+                <img src="img/it-support.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">IT <br> Support</h1>
                 <p class="choice-text">We believe in channeling a systematic approach for our software development
                     solutions irrespective of their complexity. We deploy advanced technology for software development
                     projects
                 </p>
                 <div class="prev-next-cont">
                     <div class="prev-cont" onclick="plusSlides1(-1)">
-                        <h1 class="prev-title">IT <br> Support</h1>
+                        <h1 class="prev-title">IT <br> Consulting</h1>
                         <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
                     </div>
                     <div class="next-cont" onclick="plusSlides1(1)">
-                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <h1 class="next-title">Software <br> Development</h1>
                         <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
                     </div>
                 </div>
             </div>
             <div class="service-detail fade2 ss1">
-                <img src="img/software development.svg" alt="software-development" class="choice-icon">
-                <h1 class="choice-title">Software <br> Development</h1>
-                <p class="choice-text">We believe in channeling a systematic approach for our software development
-                    solutions irrespective of their complexity. We deploy advanced technology for software development
-                    projects
-                </p>
-                <div class="prev-next-cont">
-                    <div class="prev-cont" onclick="plusSlides1(-1)">
-                        <h1 class="prev-title">IT <br> Support</h1>
-                        <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
-                    </div>
-                    <div class="next-cont" onclick="plusSlides1(1)">
-                        <h1 class="next-title">Testing <br> and QA</h1>
-                        <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
-                    </div>
-                </div>
-            </div>
-
-
-            </div>
-            <div class="service-detail fade2 ss1">
-                <img src="img/software development.svg" alt="software-development" class="choice-icon">
-                <h1 class="choice-title">Software <br> Development</h1>
+                <img src="img/it-support.svg" alt="software-development" class="choice-icon">
+                <h1 class="choice-title">IT <br> Support</h1>
                 <p class="choice-text">We believe in channeling a systematic approach for our software development
                     solutions irrespective of their complexity. We deploy advanced technology for software development
                     projects
                 </p>
                 <div class="prev-next-cont">
                     <div class="prev-cont">
-                        <h1 class="prev-title">IT <br> Support</h1>
+                        <h1 class="prev-title">IT <br> Consulting</h1>
                         <img src="img/prev-icon.svg" alt="prev-icon" class="prev-icon">
                     </div>
                     <div class="next-cont">
-                        <h1 class="next-title">Testing <br> and QA</h1>
+                        <h1 class="next-title">Software <br> Development</h1>
                         <img src="img/next-icon.svg" alt="next-icon" class="next-icon">
                     </div>
                 </div>
             </div>
         </div>
+        </div>
         <div class="our-industries section" id="our-industries">
-            <div class="main-cont">
+            <div class="main-cont" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                 <div class="description-cont">
                     <h1 class="industries-title">Our Industries</h1>
                     <p class="industries-text">
@@ -373,47 +373,47 @@
                 <img src="img/industries-num.svg" alt="industies-num" class="industries-number">
             </div>
             <div class="industries">
-                <div class="single-industry">
+                <div class="single-industry" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
                     <img src="img/big-data.svg" alt="big-data" class="industry-icon">
                     <h1 class="industry-name">Big Data</h1>
                     <p class="industry-description">Lorem Ipsum is simply <br> dummy text of the </p>
                 </div>
-                <div class="single-industry">
+                <div class="single-industry" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1200">
                     <img src="img/machine-learning.svg" alt="machine-learning" class="industry-icon">
                     <h1 class="industry-name">Machine Learning</h1>
                     <p class="industry-description">Lorem Ipsum is simply <br> dummy text of the </p>
                 </div>
-                <div class="single-industry">
+                <div class="single-industry" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1400">
                     <img src="img/artificial-intelligence (3).svg" alt="Artificial-Intelligence" class="industry-icon">
                     <h1 class="industry-name">Artificial Intelligence</h1>
                     <p class="industry-description">Lorem Ipsum is simply <br> dummy text of the </p>
                 </div>
-                <div class="single-industry">
+                <div class="single-industry" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1600">
                     <img src="img/augmented-reality.svg" alt="augmented-reality" class="industry-icon">
                     <h1 class="industry-name">Augmented Reality</h1>
                     <p class="industry-description">Lorem Ipsum is simply <br> dummy text of the </p>
                 </div>
-                <div class="single-industry">
+                <div class="single-industry" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1800">
                     <img src="img/iot.svg" alt="iot" class="industry-icon">
                     <h1 class="industry-name">Internet of Things</h1>
                     <p class="industry-description">Lorem Ipsum is simply <br> dummy text of the </p>
                 </div>
-                <div class="single-industry">
+                <div class="single-industry" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">
                     <img src="img/computer-vision.svg" alt="computer-vision" class="industry-icon">
                     <h1 class="industry-name">Computer Vision</h1>
                     <p class="industry-description">Lorem Ipsum is simply <br> dummy text of the </p>
                 </div>
-                <div class="single-industry">
+                <div class="single-industry" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2200">
                     <img src="img/mobile-development.svg" alt="mobile-development" class="industry-icon">
                     <h1 class="industry-name">Mobile Development</h1>
                     <p class="industry-description">Lorem Ipsum is simply <br> dummy text of the </p>
                 </div>
-                <div class="single-industry">
+                <div class="single-industry" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2400">
                     <img src="img/business-consultancy.svg" alt="business-consultancy" class="industry-icon">
                     <h1 class="industry-name">Business Consultancy</h1>
                     <p class="industry-description">Lorem Ipsum is simply <br> dummy text of the </p>
                 </div>
-                <div class="single-industry">
+                <div class="single-industry" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2600">
                     <img src="img/zoho-1.svg" alt="zoho" class="industry-icon">
                     <h1 class="industry-name">Zoho Products</h1>
                     <p class="industry-description">Lorem Ipsum is simply <br> dummy text of the </p>
@@ -421,14 +421,14 @@
             </div>
         </div>
         <div class="our-solutions section" id="our-solutions">
-            <div class="main-cont">
+            <div class="main-cont" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">
                 <img src="img/solutions-num.svg" alt="solutions-num" class="solutions-num">
                 <h1 class="solutions-title">Solutions</h1>
                 <p class="solutions-para">ICIGAI delivers end-to-end digital transformation by refining the people,
                     processes, and technology required to implement your chosen solution.
                 </p>
             </div>
-            <div class="choices-cont">
+            <div class="choices-cont" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1200">
                 <div class="choices-left">
                     <div class="choice dot active" onclick="currentSlide(1)">
                         <h3 class="choice-number">01</h3>
@@ -486,7 +486,7 @@
                     </div>
                 </div>
             </div>
-            <div class="service-detail fade2 ss">
+            <div class="service-detail fade2 ss" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">
                 <img src="img/data-analytics.svg" alt="data-analytics" class="choice-icon">
                 <h1 class="choice-title">Data <br> Analytics</h1>
                 <p class="choice-text">Our data engineers detect, organize, and save big data for your platform Haider
@@ -635,58 +635,58 @@
             </div>
         </div>
         <div class="our-people section" id="our-team">
-            <h1 class="our-people-title">Our People</h1>
+            <h1 class="our-people-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">Our People</h1>
             <div class="our-team-members">
-                <div class="single-member">
+                <div class="single-member" data-aos="fade" data-aos-duration="2000" data-aos-delay="1400">
                     <img src="img/mostafa-saad.png" alt="mostafa-saad" class="member-pic">
                     <div class="member-info">
                         <h1 class="member-name">Mostafa</h1>
                         <h2 class="member-job-title">UI/UX Designer</h2>
                     </div>
                 </div>
-                <div class="single-member">
+                <div class="single-member" data-aos="fade" data-aos-duration="2000" data-aos-delay="1600">
                     <img src="img/karim-mahmoud.png" alt="karim-mahmoud" class="member-pic">
                     <div class="member-info">
                         <h1 class="member-name">Karim</h1>
                         <h2 class="member-job-title">Software Developer</h2>
                     </div>
                 </div>
-                <div class="single-member">
+                <div class="single-member" data-aos="fade" data-aos-duration="2000" data-aos-delay="1800">
                     <img src="img/Amr Mohamed.jpeg" alt="mostafa-saad" class="member-pic">
                     <div class="member-info">
                         <h1 class="member-name">Amr</h1>
                         <h2 class="member-job-title">Software Developer</h2>
                     </div>
                 </div>
-                <div class="single-member">
+                <div class="single-member" data-aos="fade" data-aos-duration="2000" data-aos-delay="2000">
                     <img src="img/karim-mahmoud.png" alt="karim-mahmoud" class="member-pic">
                     <div class="member-info">
                         <h1 class="member-name">Karim</h1>
                         <h2 class="member-job-title">Software Developer</h2>
                     </div>
                 </div>
-                <div class="single-member">
+                <div class="single-member" data-aos="fade" data-aos-duration="2000" data-aos-delay="2200">
                     <img src="img/mostafa-saad.png" alt="mostafa-saad" class="member-pic">
                     <div class="member-info">
                         <h1 class="member-name">Mostafa</h1>
                         <h2 class="member-job-title">UI/UX Designer</h2>
                     </div>
                 </div>
-                <div class="single-member">
+                <div class="single-member" data-aos="fade" data-aos-duration="2000" data-aos-delay="2400">
                     <img src="img/karim-mahmoud.png" alt="karim-mahmoud" class="member-pic">
                     <div class="member-info">
                         <h1 class="member-name">Karim</h1>
                         <h2 class="member-job-title">Software Developer</h2>
                     </div>
                 </div>
-                <div class="single-member">
+                <div class="single-member" data-aos="fade" data-aos-duration="2000" data-aos-delay="2600">
                     <img src="img/mostafa-saad.png" alt="mostafa-saad" class="member-pic">
                     <div class="member-info">
                         <h1 class="member-name">Mostafa</h1>
                         <h2 class="member-job-title">UI/UX Designer</h2>
                     </div>
                 </div>
-                <div class="single-member">
+                <div class="single-member" data-aos="fade" data-aos-duration="2000" data-aos-delay="2800">
                     <img src="img/karim-mahmoud.png" alt="karim-mahmoud" class="member-pic">
                     <div class="member-info">
                         <h1 class="member-name">Karim</h1>
@@ -696,28 +696,6 @@
 
             </div>
         </div>
-        <!-- Contact -->
-        <!-- <section id="contact">
-            <h1 class="section-header">CONTACT</h1>
-            <div class="contact-wrapper">
-                <form id="contact-form" class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
-                            required>
-                    </div>
-                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-
-                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                        SEND
-                    </button>
-
-                </form>
-            </div>
-        </section> -->
         <footer class="footer">
             <div class="logo-box">
                 <img src="img/footer-logo.svg" alt="footer-logo" class="logo-footer">
@@ -813,7 +791,7 @@
             var i;
             var slides = document.getElementsByClassName("ss1");
             var dots = document.getElementsByClassName("dot1");
-            if (n > slides.length-1) { slideIndex1 = 1 }
+            if (n > slides.length - 1) { slideIndex1 = 1 }
             if (n < 1) { slideIndex1 = slides.length }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
@@ -827,32 +805,31 @@
 
 
 
-  var section = document.querySelectorAll(".section");
-  var sections = {};
-  var i = 0;
+        var section = document.querySelectorAll(".section");
+        var sections = {};
+        var i = 0;
 
-  Array.prototype.forEach.call(section, function(e) {
-    sections[e.id] = e.offsetTop;
-  });
+        Array.prototype.forEach.call(section, function (e) {
+            sections[e.id] = e.offsetTop;
+        });
 
-  window.onscroll = () =>{
-    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+        window.onscroll = () => {
+            var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
-    for (i in sections) {
-      // console.log(i)
+            for (i in sections) {
+                // console.log(i)
 
-      if (sections[i] <= scrollPosition) {
-        console.log("a[href=#"+i+"]")
+                if (sections[i] <= scrollPosition) {
+                    console.log("a[href=#" + i + "]")
 
-        // console.log('postion:'+scrollPosition);
-        // console.log('section:'+sections[i]);
-        document.querySelector('.lactive').setAttribute('class', 'nav-list__item');
-        document.querySelector("a[href='#"+i+"']").setAttribute('class', 'nav-list__item lactive');
-      }
-    }
-  };
-
-
+                    // console.log('postion:'+scrollPosition);
+                    // console.log('section:'+sections[i]);
+                    document.querySelector('.lactive').setAttribute('class', 'nav-list__item');
+                    document.querySelector("a[href='#" + i + "']").setAttribute('class', 'nav-list__item lactive');
+                }
+            }
+        };
+        AOS.init();
     </script>
 </body>
 
