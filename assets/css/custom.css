@@ -1,0 +1,352 @@
+body {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.contactBG {
+    background-image: url(../../img/contact_bg.svg);
+    background-size: 55% 55%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contact-ul {
+    padding-left: 0px;
+}
+
+.contact-ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.contact-ul li p {
+    font-size: 16px;
+    list-style: 1.5em;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.contact-ul li img {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.10) !important;
+}
+
+.contactCard {
+    box-shadow: 0 0 30 rgba(0, 0, 0, 0.10) !important;
+    border: 0px !important;
+}
+
+.contactBorder {
+    background-color: #062233;
+    min-width: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    height: 3px;
+}
+
+.form-label {
+    font-size: 1.5rem !important;
+}
+
+.btn-primary {
+    background-color: #2A2A27 !important;
+    border: 0px !important;
+    font-size: 1.5rem !important;
+}
+
+.form-control {
+    height: 40px !important;
+}
+
+.form-control::placeholder {
+    font-size: 1.5rem !important;
+}
+
+.form-contro:focus {
+    border-color: #062233 !important;
+    box-shadow: none !important;
+    border: 0px !important;
+}
+
+.portfolioTab {
+    border: 0px;
+}
+
+.portfolioTab .nav-link {
+    color: #15222B;
+    font-size: 18px;
+    border: none;
+}
+
+.portfolioTab .nav-link.active {
+    border: none;
+    color: #062233;
+}
+
+.portfolioTab .nav-link:hover {
+    border: none;
+    color: #062233;
+}
+
+.headerBorder {
+    width: 50px;
+    float: left;
+    border-color: #062233;
+    display: block;
+    border-width: 3px;
+    margin: 5px 0px;
+}
+
+.font-100 {
+    font-size: 90px;
+    color: #F2F2F2;
+    position: absolute;
+    top: -70px;
+    z-index: -1;
+}
+
+.galleryBox:hover .galleryHover {
+    display: block;
+    transition-property: background;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    cursor: pointer;
+}
+
+.galleryHover {
+    display: none;
+    background: #15222be8;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 99%;
+    height: 100%;
+}
+
+.mainHeading {
+    font-size: 3.5rem;
+}
+
+.galleryHover .btn {
+    font-size: 1.5rem !important;
+}
+
+.galleryHover p {
+    font-size: 1.5rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 20px;
+}
+
+.galleryHover a {
+    font-size: 1.5rem !important;
+    margin-left: 1rem;
+}
+
+.btn-danger {
+    background-color: #f2f2f2 !important;
+    border: 0px !important;
+    color: #062233;
+    padding: 10px 40px;
+}
+
+.btn-danger:hover {
+    color: #062233;
+    background-color: #ffffff !important;
+}
+
+.smallcounter-img {
+    width: 24px !important;
+    filter: brightness(0);
+}
+
+.services-title {
+    font-family: SFSemiBold;
+    font-size: 9rem;
+    margin-bottom: 3rem;
+}
+
+.services-para {
+    font-family: SFRegular;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.services-ulTab li {
+    width: 50%;
+    margin-bottom: 20px !important;
+}
+
+.service-detail {
+    background-color: #3A404A;
+}
+
+.choice-name {
+    font-family: SFSemiBold;
+    font-size: 2.2rem;
+    color: #8C8C8E;
+}
+
+.choice-number {
+    font-family: SFSemiBold;
+    font-size: 2rem;
+    color: #8C8C8E;
+    margin-bottom: 1.5rem;
+}
+
+.choice-title {
+    font-family: SFSemiBold;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    color: #FFFFFF;
+}
+
+.choice-text {
+    font-family: SFMedium;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 9rem;
+    color: #FFFFFF;
+}
+
+.prev-title,
+.next-title {
+    font-family: SFMedium;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 3.1rem;
+    color: #FFFFFF;
+}
+
+.services-ulTab {
+    border: 0px !important;
+}
+
+.services-ulTab .nav-link {
+    border: 0px !important;
+}
+
+.services-ulTab .nav-link.active {
+    background-color: transparent !important;
+    color: #062233 !important;
+    border: 0px !important;
+}
+
+.services-ulTab .nav-link.active .choice-name,
+.services-ulTab .nav-link.active .choice-number {
+    color: #062233 !important;
+}
+
+.icigai-header {
+    display: inline-block !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-family: SFSemiBold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #747576;
+    margin-left: 5rem;
+}
+
+@media screen and (min-width: 250px) and (max-width: 768px) {
+    body {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    .navbar-toggler-icon {
+        background-image: url(../../assets/images/hamburger.svg) !important;
+    }
+    .navbar-toggler-icon {
+        width: 12rem;
+        filter: brightness(0);
+        position: relative;
+        z-index: 10;
+    }
+    .navbar-nav {
+        position: relative;
+        background-color: #f7f7f7;
+        top: 30px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .navbar-toggler-icon:focus,
+    .navbar-toggler:focus {
+        border: 0px !important;
+        box-shadow: none !important;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 4.5rem;
+        line-height: 6.5rem;
+    }
+    .main-section .our-industries .industries .single-industry .industry-name {
+        text-align: center !important;
+    }
+    .main-section .about-us-follow-up .video-cont .about-us-extra {
+        margin-left: 8rem !important;
+    }
+    .services-ulTab {
+        margin-top: 20px;
+    }
+    .service-detail {
+        text-align: center;
+    }
+    .mob-left {
+        text-align: left !important;
+    }
+    .services-ulTab li {
+        width: 33.33%;
+        margin-bottom: 20px !important;
+    }
+    .galleryHover p {
+        font-size: 3rem !important;
+        line-height: 4.5rem !important;
+        margin-bottom: 20px !important;
+    }
+    .galleryHover a {
+        font-size: 3rem !important;
+        line-height: 4.5rem !important;
+        margin-left: 20px;
+    }
+    .galleryHover .btn {
+        font-size: 3rem !important;
+        line-height: 4.5rem !important;
+    }
+    .portfolioTab .nav-link {
+        margin-left: 10px !important;
+        margin-bottom: 20px !important;
+        color: #062233;
+        opacity: 60%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .portfolioTab .nav-link.active {
+        opacity: 100%;
+    }
+    .mainHeading,
+    .contactform-heading {
+        font-size: 5rem !important;
+    }
+    h2,
+    .btn-primary {
+        font-size: 3.5rem !important;
+    }
+    .contact-ul li p {
+        line-height: 1.5em !important;
+    }
+    .form-label {
+        font-size: 3rem !important;
+        margin-bottom: 10px;
+    }
+    .form-control::placeholder {
+        font-size: 2.5rem !important;
+    }
+    .main-section .footer {
+        padding-top: 30.5rem !important;
+    }
+    .main-section .our-people {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+}

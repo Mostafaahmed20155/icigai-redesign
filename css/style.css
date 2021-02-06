@@ -10,9 +10,11 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-.choice h3{
-  color: #8C8C8E;
+
+.choice h3 {
+    color: #8C8C8E;
 }
+
 body {
     box-sizing: border-box;
     background-color: #E9EAED;
@@ -76,9 +78,10 @@ body h3 {
     top: 0;
 }
 
-.icigai-header .logo-box .icigai-logo {
+
+/* .icigai-header .logo-box .icigai-logo {
     width: 70%;
-}
+} */
 
 .icigai-header .nav-list {
     display: flex;
