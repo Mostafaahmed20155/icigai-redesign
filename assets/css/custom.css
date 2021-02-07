@@ -237,9 +237,9 @@ body {
     color: #062233 !important;
 }
 
-.icigai-header {
+/* .icigai-header {
     display: inline-block !important;
-}
+} */
 
 .navbar-expand-lg .navbar-nav .nav-link {
     font-family: SFSemiBold;
